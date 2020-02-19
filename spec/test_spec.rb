@@ -3,4 +3,4 @@ describe 'As a user' do
     visit '/'
     expect(page).to have_content("")
   end
-end
+end   
