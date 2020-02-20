@@ -1,15 +1,6 @@
 language: ruby
 rvm:
 - 2.5.1
-addons:
- postgresql: "11.5"
- apt:
-  packages:
-   - postgresql-11.5
-   - postgresql-client-11.5
-env:
-  global:
-  - PGPORT=5433
 before_script:
  - cp config/database.yml.travis config/database.yml
  - psql -c 'create database travis_ci_test' -U postgres
