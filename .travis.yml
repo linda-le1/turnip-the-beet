@@ -3,6 +3,9 @@ rvm:
 - 2.5.1
 addons:
  postgresql: "11.5"
+before_script:
+ - cp config/database.yml.travis config/database.yml
+ - psql -c 'create database travis_ci_test' -U postgres
 before_install:
  - gem install bundler -v 2.1.4
 script:
@@ -10,10 +13,6 @@ script:
  - bundle exec rake db:reset db:setup db:migrate RAILS_ENV=test
 services:
  - postgresql
-before_script:
- - cp config/database.yml.travis config/database.yml
- - psql -c 'create database travis_ci_test' -U postgres
- - psql -c 'create user root with superuser;' -U postgres
 deploy:
   provider: heroku
   api_key:
