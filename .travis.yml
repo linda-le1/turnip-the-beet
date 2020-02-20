@@ -1,8 +1,17 @@
 language: ruby
 rvm:
- - 2.5.1
+- 2.5.1
+before_install:
+ - gem install bundler -v 2.1.4
 script:
- - bundle install - jobs=3 - retry=3
- - bundle exec rake db:create
- - bundle exec rake db:migrate
  - bundle exec rspec
+ - bundle exec rake db:migrate RAILS_ENV=test
+services:
+ - postgresql
+deploy:
+  provider: heroku
+  api_key:
+    secure: i3P64gmfQr43695KV/LOxOsGNk0+fxez6Ca65v/1IVTZWXfEEFoYNyOWvKNtbCAw0NfniFT4HV8k1rtH7jy+R0dkgZeNjYz2J087cDxvxROpA+Zu1czYe0TFPea7tl9AAplV42aHnnQ8razJd7fMa45jZ/qbD7zDlXGnhj/lTN5tPg7LJmU0eQhK0rREp0ScE5F2UOCQMIJNqlGEojgTijkbP4p4Opg09+UWO6FyqcBVRslgohDZ56pPgJR/W33S36k4IHmvRpAucrU4ITMaMMhXMPPRM2Qq4XVgO4KXvYWR3e8Ixbj4ewibGMZosghpYaSwBLKlcSrZc54/gqRer1NOJ/QQhAJ2qyJocaVGNdfTFEGnoOTJ84wc6RzHWhDGfhGGyHxi5NwYPOY1zCCF1Lx4LUFMPhFVeRWB0ZzNaRh9pYW+RzZoiYLdjBLGTW3kKtxBCtQ2dsZgEYKi/Isq0dbHijCeNJHUV8f0JhWqONlIMHNbAoiCaRd0oIkQjNESIWC7cM0yHPP0VCh7kt5wqvyOLZO4/Byq5RNhQCKOG/8TtF4TiqCTdPXtFMFm5XzmJbCRDx+lAUli374U1NRW5RqFcatfGHJyt+TxN7Q0H0jPwN+6iAdx9ooo383TC8SBQ8U2ZbMj9GHIr3/5ZOP8ttOyEEzs6yoMfwxLZO4C6U0=
+  app: turnip-the-beet
+  on:
+    repo: linda-le1/turnip-the-beet
