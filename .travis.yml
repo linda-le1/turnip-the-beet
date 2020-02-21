@@ -7,8 +7,8 @@ before_script:
 before_install:
  - gem install bundler -v 2.1.4
 script:
- - bundle exec rspec
  - bundle exec rails db:migrate RAILS_ENV=test
+ - bundle exec rspec
 services:
  - postgresql
 deploy:
