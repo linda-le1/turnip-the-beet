@@ -1,8 +1,6 @@
 class SessionsController < ApplicationController
   def create
-    binding.pry
     user = User.create(uid: uid, display_name: display_name, token: token, refresh_token: refresh_token)
-    binding.pry
     redirect_to '/recommendations/new'
   end
 
