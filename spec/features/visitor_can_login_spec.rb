@@ -1,16 +1,12 @@
 require 'rails_helper'
 
 describe 'As a visitor' do
-  it 'can visit the home page and sign in using Spotify OAuth' do
+  it 'can visit the home page and see a login button' do
 
     visit '/'
 
     expect(page).to have_content("Turnip the Beet")
     expect(page).to have_button("Lettuce Begin (Log in with Spotify)")
-
-    # click_button "Lettuce Begin (Log in with Spotify)"
-    #
-    # expect(current_path).to eq('/recommendations/new')
   end
 
   # it 'creates a new user when logging in with Spotify for the first time' do
