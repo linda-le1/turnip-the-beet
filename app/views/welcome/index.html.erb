@@ -1,2 +1,20 @@
-<h1> Turnip the Beet </h1>
-<%= button_to "Lettuce Begin (Log in with Spotify)", "/auth/spotify", method: :get %>
+<%# <h1> Turnip the Beet </h1> %>
+<img src="https://cdn.britannica.com/s:700x500/17/196817-050-6A15DAC3/vegetables.jpg", class="img-fluid" alt="Responsive veggie image">
+<%# <div style="background-image: 'https://cdn.britannica.com/s:700x500/17/196817-050-6A15DAC3/vegetables.jpg');"> %>
+
+
+
+
+<% if !current_user %>
+  <div class="col text-center">
+  <h3><br>
+  <%= "" %><br>
+  <%= "" %><br>
+  <%= "" %><br>
+  <%= "" %><br>
+  <%= "" %><br>
+  <%= "" %><br></h3>
+
+    <%= button_to "Lettuce Begin (Log in with Spotify)", "/auth/spotify", class: "btn btn-success", method: :get %>
+  </div>
+<% end %>
