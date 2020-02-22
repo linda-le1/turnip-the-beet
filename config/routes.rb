@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/', to: 'welcome#index'
   get '/auth/spotify/callback', to: 'sessions#create'
   get '/recommendations/new', to: 'recommendations#new'
+
+  delete '/sessions/:id', to: 'sessions#destroy'
 end
