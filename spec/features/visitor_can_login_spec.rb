@@ -23,4 +23,26 @@ describe 'As a visitor' do
     expect(page).to have_content("Welcome, #{user.display_name}!")
     expect(user.token).to eq(ENV['LINDA_TOKEN']) 
   end
+
+  it 'does not create a user if it is a return user' do
+    linda = create(:user)
+
+    Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:spotify]
+    OmniAuth.config.test_mode = true
+
+    OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new({
+      :provider => 'spotify',
+      :uid => '1235996540',
+      :extra => {:raw_info => {display_name: 'Linda Le'}},
+      :credentials => {token: ENV['LINDA_TOKEN'], refresh_token: ENV['LINDA_REFRESH_TOKEN']}
+    })
+
+    visit '/'
+
+    click_button "Lettuce Begin (Log in with Spotify)"
+
+    expect(User.all.count).to eq(1)
+
+    click_button 'Logout'
+  end 
 end
