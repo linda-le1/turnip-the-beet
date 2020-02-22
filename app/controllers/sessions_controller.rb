@@ -1,6 +1,13 @@
 class SessionsController < ApplicationController
   def create
-    user = User.create(uid: uid, display_name: display_name, token: token, refresh_token: refresh_token)
+    if user = User.find_by(uid: uid)
+      user.update(token: token, refresh_token: refresh_token)
+    else
+      user = User.create(uid: uid,
+                         display_name: display_name, 
+                         token: token, 
+                         refresh_token: refresh_token) 
+    end
     session[:user_id] = user.id
     redirect_to '/recommendations/new'
   end
