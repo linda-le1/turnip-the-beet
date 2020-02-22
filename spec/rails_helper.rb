@@ -68,3 +68,17 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+require 'rspec/rails'
+require 'vcr'
+require 'webmock/rspec'
+
+VCR.configure do |config|
+  config.ignore_localhost = true
+  config.cassette_library_dir = 'spec/cassettes'
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+  config.filter_sensitive_data("<LINDA_TOKEN>") { ENV['LINDA_TOKEN'] }
+  config.filter_sensitive_data("<LINDA_REFRESH_TOKEN>") { ENV['LINDA_REFRESH_TOKEN'] }
+  config.allow_http_connections_when_no_cassette = true
+end
