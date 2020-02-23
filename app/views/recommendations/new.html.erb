@@ -1,8 +1,14 @@
+<%= bootstrap_form_tag url: '/recommendations' do |f| %>
+  <%= f.primary "Cuisine" %>
+  <%= f.email_field :email, value: 'name@example.com' %>
+  <%= f.submit %>
+<% end %>
+
 <div class="btn-group">
   <button class="btn btn-secondary btn-lg btn-danger" type="button">
     Cuisine
   </button>
-  
+
   <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split btn-danger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
   </button>
@@ -28,7 +34,7 @@
   <button class="btn btn-secondary btn-lg" style="background-color:#9370db" type="button">
     Mood
   </button>
-  
+
   <button type="button" style="background-color:#9370db" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
   </button>
