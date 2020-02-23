@@ -21,7 +21,7 @@ describe 'As a visitor' do
 
     expect(current_path).to eq('/recommendations/new')
     expect(page).to have_content("Welcome, #{user.display_name}!")
-    expect(user.token).to eq(ENV['LINDA_TOKEN'])
+    expect(user.token).to eq('12345')
   end
 
   it 'does not create a user if it is a return user' do
@@ -34,7 +34,7 @@ describe 'As a visitor' do
       :provider => 'spotify',
       :uid => '1235996540',
       :extra => {:raw_info => {display_name: 'Linda Le'}},
-      :credentials => {token: ENV['LINDA_TOKEN'], refresh_token: ENV['LINDA_REFRESH_TOKEN']}
+      :credentials => {token: '12345', refresh_token: '12345'}
     })
 
     visit '/'
