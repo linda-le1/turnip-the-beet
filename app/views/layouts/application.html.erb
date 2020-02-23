@@ -20,16 +20,20 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarText">
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="/shelters">Farm Some Beets</a>
-    </li>
     <% if current_user %>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/shelters">Farm Some Beets</a>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link" href="/pets">Profile</a>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="/pets">Log Out</a>
+        <%= link_to "Log Out", "/sessions/#{current_user.id}", class: 'nav-link', method: :delete %>
       </li>
+
     <% end %>
   </ul>
   </nav>
