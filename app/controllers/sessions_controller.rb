@@ -8,9 +8,9 @@ class SessionsController < ApplicationController
       token: token, 
       refresh_token: refresh_token) 
     end
-    session[:user_id] = user.id
-    flash[:success] = "Welcome, #{user.display_name}!"
+    # flash[:notice] = "Welcome, #{user.display_name}!" not working for some reason
     redirect_to '/recommendations/new'
+    session[:user_id] = user.id
   end
   
   def destroy
