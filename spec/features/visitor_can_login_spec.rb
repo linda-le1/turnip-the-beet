@@ -43,6 +43,8 @@ describe 'As a visitor' do
 
     expect(User.all.count).to eq(1)
 
-    click_button 'Logout'
+    click_on 'Log Out'
+
+    expect(current_path).to eq('/')
   end 
 end
