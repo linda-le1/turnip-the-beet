@@ -25,7 +25,7 @@ describe 'As a visitor' do
   end
 
   it 'does not create a user if it is a return user' do
-    linda = create(:user)
+    linda = create(:user, token: '12345', refresh_token: '12345')
 
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:spotify]
     OmniAuth.config.test_mode = true
@@ -49,7 +49,7 @@ describe 'As a visitor' do
   end 
 
   it 'creates a second user' do
-    linda = create(:user)
+    linda = create(:user, token: '12345', refresh_token: '12345')
     
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:spotify]
     OmniAuth.config.test_mode = true
