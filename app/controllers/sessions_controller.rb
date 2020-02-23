@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
       refresh_token: refresh_token) 
     end
     session[:user_id] = user.id
+    flash[:success] = "Welcome, #{user.display_name}!"
     redirect_to '/recommendations/new'
   end
   
