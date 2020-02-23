@@ -12,6 +12,11 @@ class SessionsController < ApplicationController
     redirect_to '/recommendations/new'
   end
 
+  def destroy
+    session[:user_id] = nil
+    redirect_to '/'
+  end
+
   private
 
   def auth_hash
