@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       token: token, 
       refresh_token: refresh_token) 
     end
-    # flash[:notice] = "Welcome, #{user.display_name}!" not working for some reason
+    flash[:notice] = "Welcome, #{user.display_name}!"
     redirect_to '/recommendations/new'
     session[:user_id] = user.id
   end
