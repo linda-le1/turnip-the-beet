@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.3'
 
 gem 'figaro'
 gem 'omniauth-spotify'
@@ -36,8 +36,15 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+  gem 'factory_bot_rails'
 end
 
 group :development do

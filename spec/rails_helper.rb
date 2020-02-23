@@ -41,6 +41,9 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
+  config.include FactoryBot::Syntax::Methods
+
+
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
@@ -67,4 +70,18 @@ Shoulda::Matchers.configure do |config|
     with.test_framework :rspec
     with.library :rails
   end
+end
+
+require 'rspec/rails'
+require 'vcr'
+require 'webmock/rspec'
+
+VCR.configure do |config|
+  config.ignore_localhost = true
+  config.cassette_library_dir = 'spec/cassettes'
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+  config.filter_sensitive_data("<LINDA_TOKEN>") { ENV['LINDA_TOKEN'] }
+  config.filter_sensitive_data("<LINDA_REFRESH_TOKEN>") { ENV['LINDA_REFRESH_TOKEN'] }
+  config.allow_http_connections_when_no_cassette = true
 end
