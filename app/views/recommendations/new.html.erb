@@ -1,53 +1,8 @@
 <%= bootstrap_form_tag url: '/recommendations' do |f| %>
-  <%= f.primary "Cuisine" %>
-  <%= f.email_field :email, value: 'name@example.com' %>
-  <%= f.submit %>
+<%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
+{ label: "Cuisine:", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+<%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunshiny", "sunshiny"] ], { label: "Mood:", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+<%= f.submit "Harvest Your Beets!" %>
 <% end %>
 
-<div class="btn-group">
-  <button class="btn btn-secondary btn-lg btn-danger" type="button">
-    Cuisine
-  </button>
 
-  <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split btn-danger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-
-  <ul class="dropdown-menu" id='cuisine'>
-    <button class="dropdown-item" type="button">Italian</button>
-    <button class="dropdown-item" type="button">Mexican</button>
-    <button class="dropdown-item" type="button">Indian</button>
-    <button class="dropdown-item" type="button">American</button>
-    <button class="dropdown-item" type="button">Thai</button>
-    <button class="dropdown-item" type="button">Greek</button>
-    <button class="dropdown-item" type="button">Chinese</button>
-    <button class="dropdown-item" type="button">Japanese</button>
-    <button class="dropdown-item" type="button">Latin</button>
-    <button class="dropdown-item" type="button">Vietnamese</button>
-    <button class="dropdown-item" type="button">BBQ</button>
-    <button class="dropdown-item" type="button">Korean</button>
-    <button class="dropdown-item" type="button">French</button>
-  </ul>
-
-</div>
-<div class="btn-group">
-  <button class="btn btn-secondary btn-lg" style="background-color:#9370db" type="button">
-    Mood
-  </button>
-
-  <button type="button" style="background-color:#9370db" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-
-  <ul class="dropdown-menu" id='mood'>
-    <button class="dropdown-item" type="button">Party</button>
-    <button class="dropdown-item" type="button">Chill</button>
-    <button class="dropdown-item" type="button">Happy</button>
-    <button class="dropdown-item" type="button">Jazzy</button>
-    <button class="dropdown-item" type="button">Glum</button>
-    <button class="dropdown-item" type="button">Classy</button>
-    <button class="dropdown-item" type="button">Romantic</button>
-    <button class="dropdown-item" type="button">Folksy</button>
-    <button class="dropdown-item" type="button">Sunshiny</button>
-  </ul>
-</div>
