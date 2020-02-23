@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
-gem "rails-bootstrap-helpers"
 gem "bootstrap_form"
+gem "rails-bootstrap-helpers"
 gem 'figaro'
 gem 'omniauth-spotify'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
