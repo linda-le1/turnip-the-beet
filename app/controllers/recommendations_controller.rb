@@ -3,6 +3,6 @@ class RecommendationsController < ApplicationController
   end
 
   def create
-    binding.pry
+    redirect_to recommendations_path
   end
 end
