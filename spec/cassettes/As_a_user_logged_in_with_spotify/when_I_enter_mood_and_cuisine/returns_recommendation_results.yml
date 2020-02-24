@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQD4ids4G94muZl31rqqhRkKK_qnvmbpD2XcHQ9DLS8PAkmJ_J2ND-wK-O2D125Tx3kfoFA0soSRFpJY5R-SluzhmXcB6cuAT3I576s8PWf9IV3zWi9MDDmopln549Oq34qnx1x3uG8xaFRQXXRZSUA
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQAWjmuXNcDyX-v9Vf-nVurvyMZxxk9IJozqvspuAT5FFBJJh3ir_wNqeYAGDPgJT3KI80Gmp9mU_b4mot7n7GuKFOWz6dObdc29KTMJCTrENlBhzsAYxvd1MsiLzEkS6yeGG9l_0wEv32d8NR1DAZE
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 24 Feb 2020 22:55:53 GMT
+      - Mon, 24 Feb 2020 23:50:06 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -29,13 +29,102 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '2040'
+      - '2093'
       Via:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6InBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MiLCJuYW1lIjoiVGhyb3diYWNrIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MifSx7ImlkIjoiMzdpOWRRWkYxRFgxQmxXS0RNOThjMiIsIm5hbWUiOiJQaW5veSBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDFCbFdLRE05OGMyIn0seyJpZCI6IjM3aTlkUVpGMURYNU96cnk1VTZHMGQiLCJuYW1lIjoiU3VtbWVyIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYNU96cnk1VTZHMGQifSx7ImlkIjoiMzdpOWRRWkYxRFgxTjV1Szk4bXM1cCIsIm5hbWUiOiJUZWVuIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYMU41dUs5OG1zNXAifSx7ImlkIjoiMzdpOWRRWkYxRFg4RnduWUU2UFJ2TCIsIm5hbWUiOiJSb2NrIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYOEZ3bllFNlBSdkwifV19LCJjdWlzaW5lIjp7InR5cGUiOiJpdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpFVlhiSVFuajdSUmhkU1giLCJuYW1lIjoiSXRhbHkgVG9wIDUwIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpFVlhiSVFuajdSUmhkU1gifSx7ImlkIjoiMzdpOWRRWkYxRFgwMU5QNzNFckU4YiIsIm5hbWUiOiJJdGFsaWEgaW4gQWx0YSBSb3RhemlvbmUiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgwMU5QNzNFckU4YiJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDNzRGhMdkxuemo4IiwibmFtZSI6IkVzdGF0ZSBJdGFsaWFuYSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDNzRGhMdkxuemo4In0seyJpZCI6IjM3aTlkUVpGMURXWFUybmFGVW4zN3giLCJuYW1lIjoiWm9uYSBUcmFwIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURXWFUybmFGVW4zN3gifSx7ImlkIjoiMzdpOWRRWkYxRFg3Z0diVllpWXcxTCIsIm5hbWUiOiJLYXJhb2tlIEl0YWxpYW5vIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYN2dHYlZZaVl3MUwifV19LCJjb21ib3MiOnsidHlwZSI6WyJwYXJ0eSIsIml0YWxpYW4iXSwicGxheWxpc3RzIjpbeyJpZCI6IjJjclNDRFJrSFhYNTFoTlB0Uzd2dnEiLCJuYW1lIjoibGF0aW4gamF6eiAvIGZyZW5jaCAvIGl0YWxpYW4gbG91bmdlLCBqYXp6LCB0YW5nbywgZmxhbWVuY28sIDE5NDBzLCBkaW5uZXIgcGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMmNyU0NEUmtIWFg1MWhOUHRTN3Z2cSJ9LHsiaWQiOiI2QTBhUkttMXJJb2RON0hZR0pzTHc2IiwibmFtZSI6IlRlY2hubyBQYXJ0eSDwn5iOIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzZBMGFSS20xcklvZE43SFlHSnNMdzYifSx7ImlkIjoiNzdYMmIwcFFvTWxJa0R2Sld1b21aRiIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83N1gyYjBwUW9NbElrRHZKV3VvbVpGIn0seyJpZCI6IjNMTlhsa2pqcXBGamF0cE5ZR2hVTnAiLCJuYW1lIjoiR3Jvd24gdXAgRGlubmVyIFBhcnR5IG11c2ljIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzNMTlhsa2pqcXBGamF0cE5ZR2hVTnAifSx7ImlkIjoiN2RBNlRDcjROM2l6R2VPZ2dxNEVJUyIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83ZEE2VENyNE4zaXpHZU9nZ3E0RUlTIn1dfX19
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6InBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYMXRMSFpIT2tFVlIiLCJuYW1lIjoiV2VkZGluZyBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDF0TEhaSE9rRVZSIn0seyJpZCI6IjM3aTlkUVpGMURYZGduTHIxOHZQdnUiLCJuYW1lIjoiVGFpbGdhdGUgUGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFhkZ25McjE4dlB2dSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDdGNlQybjJmZWdzIiwibmFtZSI6IlRocm93YmFjayBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDdGNlQybjJmZWdzIn0seyJpZCI6IjM3aTlkUVpGMURYOW9lZ3JqTXpLRFciLCJuYW1lIjoiVGhlIFBhcnR5IEhpdHMgb2YgdGhlIDIwMTBzIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYOW9lZ3JqTXpLRFcifSx7ImlkIjoiMzdpOWRRWkYxRFdTamliUW5GMGJVayIsIm5hbWUiOiJBZnJvIFBhcnR5IEFudGhlbXMhIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURXU2ppYlFuRjBiVWsifV19LCJjdWlzaW5lIjp7InR5cGUiOiJpdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYYUZBSldQNkRoTjAiLCJuYW1lIjoiRmVzdGEgSXRhbGlhbmEiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFhhRkFKV1A2RGhOMCJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDNFdlRyRVNWbU42IiwibmFtZSI6IkNhbnRhdXRvcmF0byBJdGFsaWFubyIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDNFdlRyRVNWbU42In0seyJpZCI6IjM3aTlkUVpGMURYNlBTRERoODBneEkiLCJuYW1lIjoiSW5kaWUgSXRhbGlhIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYNlBTRERoODBneEkifSx7ImlkIjoiMzdpOWRRWkYxRFdZQm9mVWhwZ0U4OCIsIm5hbWUiOiJSYXAgTW90aXZhemlvbmFsZSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEV1lCb2ZVaHBnRTg4In0seyJpZCI6IjM3aTlkUVpGMURYN2dHYlZZaVl3MUwiLCJuYW1lIjoiS2FyYW9rZSBJdGFsaWFubyIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDdnR2JWWWlZdzFMIn1dfSwiY29tYm9zIjp7InR5cGUiOlsicGFydHkiLCJpdGFsaWFuIl0sInBsYXlsaXN0cyI6W3siaWQiOiI3N1gyYjBwUW9NbElrRHZKV3VvbVpGIiwibmFtZSI6Ikl0YWxpYW4gRGlubmVyIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0Lzc3WDJiMHBRb01sSWtEdkpXdW9tWkYifSx7ImlkIjoiMmUyd3dXMHBYT0M3dmxNNW5rMjVvSSIsIm5hbWUiOiIxOTYwcyBJdGFsaWFuIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzJlMnd3VzBwWE9DN3ZsTTVuazI1b0kifSx7ImlkIjoiN0dsQ3ZDVjA2eWFTNExEenhsb28yMSIsIm5hbWUiOiJMYXRpbm8vSXRhbGlhbiBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83R2xDdkNWMDZ5YVM0TER6eGxvbzIxIn0seyJpZCI6IjJXR2pyQVVMOW5qbjZ4QUozellCT3giLCJuYW1lIjoiUGFydHkgSXRhbGlhbm8g8J+MiCIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8yV0dqckFVTDluam42eEFKM3pZQk94In0seyJpZCI6IjcybkhPWDNHQWtjQXhRajlMVE1JZDEiLCJuYW1lIjoiTWlnbGlvcmkgY2Fuem9uaSBpdGFsaWFuZSBlbnRybyBpbCAyMDE4IC0gSXRhbGlhbiBTb25ncywgSXRhbGlhbiBQYXJ0eSwgTm90dGUgSXRhbGlhLCBJdGFsaWFuIE5pZ2h0IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzcybkhPWDNHQWtjQXhRajlMVE1JZDEifV19fX0=
     http_version: null
-  recorded_at: Mon, 24 Feb 2020 22:55:53 GMT
+  recorded_at: Mon, 24 Feb 2020 23:50:06 GMT
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQAWjmuXNcDyX-v9Vf-nVurvyMZxxk9IJozqvspuAT5FFBJJh3ir_wNqeYAGDPgJT3KI80Gmp9mU_b4mot7n7GuKFOWz6dObdc29KTMJCTrENlBhzsAYxvd1MsiLzEkS6yeGG9l_0wEv32d8NR1DAZE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 24 Feb 2020 23:50:07 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2142'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6InBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYMElsQ0dJVUdCc0EiLCJuYW1lIjoiVWx0aW1hdGUgUGFydHkgQ2xhc3NpY3MiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgwSWxDR0lVR0JzQSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWGU5aGF5NFZUMDdmIiwibmFtZSI6IkRhbmNlaGFsbCBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWGU5aGF5NFZUMDdmIn0seyJpZCI6IjM3aTlkUVpGMURYYVhCOGZRZzd4aWYiLCJuYW1lIjoiRGFuY2UgUGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFhhWEI4ZlFnN3hpZiJ9LHsiaWQiOiIzN2k5ZFFaRjFEV1ZXaXlFOVZEa0NPIiwibmFtZSI6IlBhcnR5IERlbHV4ZSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEV1ZXaXlFOVZEa0NPIn0seyJpZCI6IjM3aTlkUVpGMURYOW9lZ3JqTXpLRFciLCJuYW1lIjoiVGhlIFBhcnR5IEhpdHMgb2YgdGhlIDIwMTBzIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYOW9lZ3JqTXpLRFcifV19LCJjdWlzaW5lIjp7InR5cGUiOiJpdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYY3VWdHRMZVF4a2giLCJuYW1lIjoiSGl0IEl0YWxpYW5lIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYY3VWdHRMZVF4a2gifSx7ImlkIjoiMzdpOWRRWkYxRFdUMVI2YlhMNGR5VyIsIm5hbWUiOiJUaGUgUGVyZmVjdCBJdGFsaWFuIERpbm5lciIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEV1QxUjZiWEw0ZHlXIn0seyJpZCI6IjM3aTlkUVpGMURYNlBTRERoODBneEkiLCJuYW1lIjoiSW5kaWUgSXRhbGlhIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYNlBTRERoODBneEkifSx7ImlkIjoiMzdpOWRRWkYxRFg3Z0diVllpWXcxTCIsIm5hbWUiOiJLYXJhb2tlIEl0YWxpYW5vIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYN2dHYlZZaVl3MUwifSx7ImlkIjoiMzdpOWRRWkYxRFdYVTJuYUZVbjM3eCIsIm5hbWUiOiJab25hIFRyYXAiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFdYVTJuYUZVbjM3eCJ9XX0sImNvbWJvcyI6eyJ0eXBlIjpbInBhcnR5IiwiaXRhbGlhbiJdLCJwbGF5bGlzdHMiOlt7ImlkIjoiNzdYMmIwcFFvTWxJa0R2Sld1b21aRiIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83N1gyYjBwUW9NbElrRHZKV3VvbVpGIn0seyJpZCI6IjJjclNDRFJrSFhYNTFoTlB0Uzd2dnEiLCJuYW1lIjoibGF0aW4gamF6eiAvIGZyZW5jaCAvIGl0YWxpYW4gbG91bmdlLCBqYXp6LCB0YW5nbywgZmxhbWVuY28sIDE5NDBzLCBkaW5uZXIgcGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMmNyU0NEUmtIWFg1MWhOUHRTN3Z2cSJ9LHsiaWQiOiI2ekNkSk9GYnJqUGZib1FwazBaS0o3IiwibmFtZSI6IlBhcnR5IDIwMjAgLy8gTXVzaWNhIHBlciBGZXN0ZSAmIENvbXBsZWFubmkgLy8gSGl0IGRlbCBtb21lbnRvIC8vIERpc2NvdGVjYSBpdGFsaWFuYSAg8J+OifCfjofwn46KIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzZ6Q2RKT0ZicmpQZmJvUXBrMFpLSjcifSx7ImlkIjoiMVhpVmpLdE8zNkV6OTZjSUZmZmxEYSIsIm5hbWUiOiJJVEFMSUFOIENJVFJVUyIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8xWGlWakt0TzM2RXo5NmNJRmZmbERhIn0seyJpZCI6IjJXR2pyQVVMOW5qbjZ4QUozellCT3giLCJuYW1lIjoiUGFydHkgSXRhbGlhbm8g8J+MiCIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8yV0dqckFVTDluam42eEFKM3pZQk94In1dfX19
+    http_version: null
+  recorded_at: Mon, 24 Feb 2020 23:50:07 GMT
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQAWjmuXNcDyX-v9Vf-nVurvyMZxxk9IJozqvspuAT5FFBJJh3ir_wNqeYAGDPgJT3KI80Gmp9mU_b4mot7n7GuKFOWz6dObdc29KTMJCTrENlBhzsAYxvd1MsiLzEkS6yeGG9l_0wEv32d8NR1DAZE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 24 Feb 2020 23:50:08 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2102'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"mood":{"type":"party","playlists":[{"id":"37i9dQZF1DX9vJ2U3sN7xj","name":"Fiesta","url":"https://open.spotify.com/playlist/37i9dQZF1DX9vJ2U3sN7xj"},{"id":"37i9dQZF1DX8FwnYE6PRvL","name":"Rock
+        Party","url":"https://open.spotify.com/playlist/37i9dQZF1DX8FwnYE6PRvL"},{"id":"37i9dQZF1DXdnyffTsenNZ","name":"Party
+        Life","url":"https://open.spotify.com/playlist/37i9dQZF1DXdnyffTsenNZ"},{"id":"37i9dQZF1DX0MXH7aN4Pxn","name":"All
+        Night Dance Party","url":"https://open.spotify.com/playlist/37i9dQZF1DX0MXH7aN4Pxn"},{"id":"37i9dQZF1DWZz0dmtcndFR","name":"Party
+        Up!","url":"https://open.spotify.com/playlist/37i9dQZF1DWZz0dmtcndFR"}]},"cuisine":{"type":"italian","playlists":[{"id":"37i9dQZF1DX01NP73ErE8b","name":"Italia
+        in Alta Rotazione","url":"https://open.spotify.com/playlist/37i9dQZF1DX01NP73ErE8b"},{"id":"37i9dQZF1DX7gGbVYiYw1L","name":"Karaoke
+        Italiano","url":"https://open.spotify.com/playlist/37i9dQZF1DX7gGbVYiYw1L"},{"id":"37i9dQZF1DWT1R6bXL4dyW","name":"The
+        Perfect Italian Dinner","url":"https://open.spotify.com/playlist/37i9dQZF1DWT1R6bXL4dyW"},{"id":"37i9dQZF1DX3EvTrESVmN6","name":"Cantautorato
+        Italiano","url":"https://open.spotify.com/playlist/37i9dQZF1DX3EvTrESVmN6"},{"id":"37i9dQZF1DXaFAJWP6DhN0","name":"Festa
+        Italiana","url":"https://open.spotify.com/playlist/37i9dQZF1DXaFAJWP6DhN0"}]},"combos":{"type":["party","italian"],"playlists":[{"id":"6cx2iQLHSEcxWWdLgZS9if","name":"LEGALIZE
+        PARTY | Ska - Reggae italiano","url":"https://open.spotify.com/playlist/6cx2iQLHSEcxWWdLgZS9if"},{"id":"3LNXlkjjqpFjatpNYGhUNp","name":"Grown
+        up Dinner Party music","url":"https://open.spotify.com/playlist/3LNXlkjjqpFjatpNYGhUNp"},{"id":"4oGn4b0Is6zzDLMIvS7Ygu","name":"Dinner
+        Party/ Italian food cooking! ;)","url":"https://open.spotify.com/playlist/4oGn4b0Is6zzDLMIvS7Ygu"},{"id":"1XiVjKtO36Ez96cIFfflDa","name":"ITALIAN
+        CITRUS","url":"https://open.spotify.com/playlist/1XiVjKtO36Ez96cIFfflDa"},{"id":"2crSCDRkHXX51hNPtS7vvq","name":"latin
+        jazz / french / italian lounge, jazz, tango, flamenco, 1940s, dinner party","url":"https://open.spotify.com/playlist/2crSCDRkHXX51hNPtS7vvq"}]}}}'
+    http_version: null
+  recorded_at: Mon, 24 Feb 2020 23:50:08 GMT
 recorded_with: VCR 5.1.0
