@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'As a user logged in with spotify' do
   describe 'when I enter mood and cuisine' do
-    it 'returns recommendation results' do
+    it 'returns recommendation results', :vcr do
       user = create(:user, token: ENV['JOMAH_TOKEN'], refresh_token: ENV['JOMAH_REFRESH'])
 
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)

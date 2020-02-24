@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQD4ids4G94muZl31rqqhRkKK_qnvmbpD2XcHQ9DLS8PAkmJ_J2ND-wK-O2D125Tx3kfoFA0soSRFpJY5R-SluzhmXcB6cuAT3I576s8PWf9IV3zWi9MDDmopln549Oq34qnx1x3uG8xaFRQXXRZSUA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 24 Feb 2020 22:55:53 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2040'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6InBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MiLCJuYW1lIjoiVGhyb3diYWNrIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MifSx7ImlkIjoiMzdpOWRRWkYxRFgxQmxXS0RNOThjMiIsIm5hbWUiOiJQaW5veSBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDFCbFdLRE05OGMyIn0seyJpZCI6IjM3aTlkUVpGMURYNU96cnk1VTZHMGQiLCJuYW1lIjoiU3VtbWVyIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYNU96cnk1VTZHMGQifSx7ImlkIjoiMzdpOWRRWkYxRFgxTjV1Szk4bXM1cCIsIm5hbWUiOiJUZWVuIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYMU41dUs5OG1zNXAifSx7ImlkIjoiMzdpOWRRWkYxRFg4RnduWUU2UFJ2TCIsIm5hbWUiOiJSb2NrIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYOEZ3bllFNlBSdkwifV19LCJjdWlzaW5lIjp7InR5cGUiOiJpdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpFVlhiSVFuajdSUmhkU1giLCJuYW1lIjoiSXRhbHkgVG9wIDUwIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpFVlhiSVFuajdSUmhkU1gifSx7ImlkIjoiMzdpOWRRWkYxRFgwMU5QNzNFckU4YiIsIm5hbWUiOiJJdGFsaWEgaW4gQWx0YSBSb3RhemlvbmUiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgwMU5QNzNFckU4YiJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDNzRGhMdkxuemo4IiwibmFtZSI6IkVzdGF0ZSBJdGFsaWFuYSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDNzRGhMdkxuemo4In0seyJpZCI6IjM3aTlkUVpGMURXWFUybmFGVW4zN3giLCJuYW1lIjoiWm9uYSBUcmFwIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURXWFUybmFGVW4zN3gifSx7ImlkIjoiMzdpOWRRWkYxRFg3Z0diVllpWXcxTCIsIm5hbWUiOiJLYXJhb2tlIEl0YWxpYW5vIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYN2dHYlZZaVl3MUwifV19LCJjb21ib3MiOnsidHlwZSI6WyJwYXJ0eSIsIml0YWxpYW4iXSwicGxheWxpc3RzIjpbeyJpZCI6IjJjclNDRFJrSFhYNTFoTlB0Uzd2dnEiLCJuYW1lIjoibGF0aW4gamF6eiAvIGZyZW5jaCAvIGl0YWxpYW4gbG91bmdlLCBqYXp6LCB0YW5nbywgZmxhbWVuY28sIDE5NDBzLCBkaW5uZXIgcGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMmNyU0NEUmtIWFg1MWhOUHRTN3Z2cSJ9LHsiaWQiOiI2QTBhUkttMXJJb2RON0hZR0pzTHc2IiwibmFtZSI6IlRlY2hubyBQYXJ0eSDwn5iOIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzZBMGFSS20xcklvZE43SFlHSnNMdzYifSx7ImlkIjoiNzdYMmIwcFFvTWxJa0R2Sld1b21aRiIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83N1gyYjBwUW9NbElrRHZKV3VvbVpGIn0seyJpZCI6IjNMTlhsa2pqcXBGamF0cE5ZR2hVTnAiLCJuYW1lIjoiR3Jvd24gdXAgRGlubmVyIFBhcnR5IG11c2ljIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzNMTlhsa2pqcXBGamF0cE5ZR2hVTnAifSx7ImlkIjoiN2RBNlRDcjROM2l6R2VPZ2dxNEVJUyIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83ZEE2VENyNE4zaXpHZU9nZ3E0RUlTIn1dfX19
+    http_version: null
+  recorded_at: Mon, 24 Feb 2020 22:55:53 GMT
+recorded_with: VCR 5.1.0
