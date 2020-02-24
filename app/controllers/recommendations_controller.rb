@@ -1,4 +1,8 @@
 class RecommendationsController < ApplicationController
   def new
-  end 
+  end
+
+  def create
+    redirect_to recommendations_path
+  end
 end
