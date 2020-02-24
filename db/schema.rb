@@ -16,12 +16,12 @@ ActiveRecord::Schema.define(version: 2020_02_20_232323) do
   enable_extension "plpgsql"
 
   create_table "users", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "uid"
     t.string "token"
     t.string "display_name"
     t.string "refresh_token"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
