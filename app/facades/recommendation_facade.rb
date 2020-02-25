@@ -3,8 +3,7 @@ class RecommendationFacade
 
   def initialize(params, token)
     @token = token
-    @mood = params[:mood]
-    @cuisine = params[:cuisine]
+    @params = params
   end
 
   def moods
@@ -25,8 +24,10 @@ class RecommendationFacade
     end
   end
 
+  private
+
   def service
     return @service if @service
-    @service = BeetFarmerService.new(@token, @mood, @cuisine)
+    @service = BeetFarmerService.new(@token, @params)
   end
 end
