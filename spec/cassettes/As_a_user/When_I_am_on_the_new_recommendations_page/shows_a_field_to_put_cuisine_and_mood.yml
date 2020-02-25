@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQC_5LSMJosshjT0F6A3TG34ARaN3dMYUqzcHmZs5zP2xPYICYAiaX2Xm-rdGaKLMqFedxlz05hAGds66qDVRmG5sUjND5GPC-EQht8LC-U2ct0Kki4FfECPq-PInYQyx-S3y0g9TZEN-lhD7IpjtJo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 25 Feb 2020 02:05:11 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2067'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"mood":{"type":"party","playlists":[{"id":"37i9dQZF1DWVcbzTgVpNRm","name":"Latin
+        Party Anthems","url":"https://open.spotify.com/playlist/37i9dQZF1DWVcbzTgVpNRm"},{"id":"37i9dQZF1DX1BlWKDM98c2","name":"Pinoy
+        Party","url":"https://open.spotify.com/playlist/37i9dQZF1DX1BlWKDM98c2"},{"id":"37i9dQZF1DX8scDqTzxoFw","name":"Kids
+        Party","url":"https://open.spotify.com/playlist/37i9dQZF1DX8scDqTzxoFw"},{"id":"37i9dQZF1DWVWiyE9VDkCO","name":"Party
+        Deluxe","url":"https://open.spotify.com/playlist/37i9dQZF1DWVWiyE9VDkCO"},{"id":"37i9dQZF1DX30w0JtSIv4j","name":"Old
+        School Hip-Hop House Party","url":"https://open.spotify.com/playlist/37i9dQZF1DX30w0JtSIv4j"}]},"cuisine":{"type":"italian","playlists":[{"id":"37i9dQZF1DX3sDhLvLnzj8","name":"Estate
+        Italiana","url":"https://open.spotify.com/playlist/37i9dQZF1DX3sDhLvLnzj8"},{"id":"37i9dQZF1DXaFAJWP6DhN0","name":"Festa
+        Italiana","url":"https://open.spotify.com/playlist/37i9dQZF1DXaFAJWP6DhN0"},{"id":"37i9dQZF1DX7gGbVYiYw1L","name":"Karaoke
+        Italiano","url":"https://open.spotify.com/playlist/37i9dQZF1DX7gGbVYiYw1L"},{"id":"37i9dQZF1DX6PSDDh80gxI","name":"Indie
+        Italia","url":"https://open.spotify.com/playlist/37i9dQZF1DX6PSDDh80gxI"},{"id":"37i9dQZF1DWT1R6bXL4dyW","name":"The
+        Perfect Italian Dinner","url":"https://open.spotify.com/playlist/37i9dQZF1DWT1R6bXL4dyW"}]},"combos":{"type":["party","italian"],"playlists":[{"id":"04NNbAW5FfvGQWpbiGynX8","name":"Perfect
+        party hits estate 2019 - playlist perfetta per far ballare lagggente","url":"https://open.spotify.com/playlist/04NNbAW5FfvGQWpbiGynX8"},{"id":"4oGn4b0Is6zzDLMIvS7Ygu","name":"Dinner
+        Party/ Italian food cooking! ;)","url":"https://open.spotify.com/playlist/4oGn4b0Is6zzDLMIvS7Ygu"},{"id":"4mIwrnKOSJSeBHglSPtCYF","name":"ITALIAN
+        PARTY","url":"https://open.spotify.com/playlist/4mIwrnKOSJSeBHglSPtCYF"},{"id":"7dA6TCr4N3izGeOggq4EIS","name":"Italian
+        Dinner","url":"https://open.spotify.com/playlist/7dA6TCr4N3izGeOggq4EIS"},{"id":"70p2n2aiRYrbcSwsXUUwsQ","name":"Italian
+        Party","url":"https://open.spotify.com/playlist/70p2n2aiRYrbcSwsXUUwsQ"}]}}}'
+    http_version: null
+  recorded_at: Tue, 25 Feb 2020 02:05:12 GMT
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQC_5LSMJosshjT0F6A3TG34ARaN3dMYUqzcHmZs5zP2xPYICYAiaX2Xm-rdGaKLMqFedxlz05hAGds66qDVRmG5sUjND5GPC-EQht8LC-U2ct0Kki4FfECPq-PInYQyx-S3y0g9TZEN-lhD7IpjtJo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 25 Feb 2020 02:05:12 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2045'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6InBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYOUVNOThhWm9zb3kiLCJuYW1lIjoiUGFydHloeW1uZW4iLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFg5RU05OGFab3NveSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDlvZWdyak16S0RXIiwibmFtZSI6IlRoZSBQYXJ0eSBIaXRzIG9mIHRoZSAyMDEwcyIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDlvZWdyak16S0RXIn0seyJpZCI6IjM3aTlkUVpGMURXVHVqaUM3d2ZvZloiLCJuYW1lIjoiSW5kaWUgUGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFdUdWppQzd3Zm9mWiJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDFONXVLOThtczVwIiwibmFtZSI6IlRlZW4gUGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgxTjV1Szk4bXM1cCJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDF0TEhaSE9rRVZSIiwibmFtZSI6IldlZGRpbmcgUGFydHkiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgxdExIWkhPa0VWUiJ9XX0sImN1aXNpbmUiOnsidHlwZSI6Iml0YWxpYW4iLCJwbGF5bGlzdHMiOlt7ImlkIjoiMzdpOWRRWkYxRFhjdVZ0dExlUXhraCIsIm5hbWUiOiJIaXQgSXRhbGlhbmUiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFhjdVZ0dExlUXhraCJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDdnR2JWWWlZdzFMIiwibmFtZSI6IkthcmFva2UgSXRhbGlhbm8iLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFg3Z0diVllpWXcxTCJ9LHsiaWQiOiI1dUl0TnBCcnJSODdGbUN2VVl1Qk5GIiwibmFtZSI6Ikl0YWxpYW4gUmFwIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzV1SXROcEJyclI4N0ZtQ3ZVWXVCTkYifSx7ImlkIjoiMzdpOWRRWkYxRFgxNEVXZUgyUHdmMyIsIm5hbWUiOiJSYXAgSXRhbGlhOiBCYXR0bGUgUm95YWxlIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYMTRFV2VIMlB3ZjMifSx7ImlkIjoiMzdpOWRRWkYxRFgzc0RoTHZMbnpqOCIsIm5hbWUiOiJFc3RhdGUgSXRhbGlhbmEiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgzc0RoTHZMbnpqOCJ9XX0sImNvbWJvcyI6eyJ0eXBlIjpbInBhcnR5IiwiaXRhbGlhbiJdLCJwbGF5bGlzdHMiOlt7ImlkIjoiN2RBNlRDcjROM2l6R2VPZ2dxNEVJUyIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC83ZEE2VENyNE4zaXpHZU9nZ3E0RUlTIn0seyJpZCI6IjJXR2pyQVVMOW5qbjZ4QUozellCT3giLCJuYW1lIjoiUGFydHkgSXRhbGlhbm8g8J+MiCIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8yV0dqckFVTDluam42eEFKM3pZQk94In0seyJpZCI6IjJYakxQUVVLenA2czJSYXkwMjBiVzciLCJuYW1lIjoiSW50ZXJuYXRpb25hbCBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8yWGpMUFFVS3pwNnMyUmF5MDIwYlc3In0seyJpZCI6IjFYaVZqS3RPMzZFejk2Y0lGZmZsRGEiLCJuYW1lIjoiSVRBTElBTiBDSVRSVVMiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMVhpVmpLdE8zNkV6OTZjSUZmZmxEYSJ9LHsiaWQiOiIyY3JTQ0RSa0hYWDUxaE5QdFM3dnZxIiwibmFtZSI6ImxhdGluIGphenogLyBmcmVuY2ggLyBpdGFsaWFuIGxvdW5nZSwgamF6eiwgdGFuZ28sIGZsYW1lbmNvLCAxOTQwcywgZGlubmVyIHBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzJjclNDRFJrSFhYNTFoTlB0Uzd2dnEifV19fX0=
+    http_version: null
+  recorded_at: Tue, 25 Feb 2020 02:05:13 GMT
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=BQC_5LSMJosshjT0F6A3TG34ARaN3dMYUqzcHmZs5zP2xPYICYAiaX2Xm-rdGaKLMqFedxlz05hAGds66qDVRmG5sUjND5GPC-EQht8LC-U2ct0Kki4FfECPq-PInYQyx-S3y0g9TZEN-lhD7IpjtJo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 25 Feb 2020 02:05:13 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '2009'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6InBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYZG55ZmZUc2VuTloiLCJuYW1lIjoiUGFydHkgTGlmZSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWGRueWZmVHNlbk5aIn0seyJpZCI6IjM3aTlkUVpGMURYMElsQ0dJVUdCc0EiLCJuYW1lIjoiVWx0aW1hdGUgUGFydHkgQ2xhc3NpY3MiLCJ1cmwiOiJodHRwczovL29wZW4uc3BvdGlmeS5jb20vcGxheWxpc3QvMzdpOWRRWkYxRFgwSWxDR0lVR0JzQSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDRSRFhzd3ZQNk1qIiwibmFtZSI6IkstUGFydHkgRGFuY2UgTWl4IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYNFJEWHN3dlA2TWoifSx7ImlkIjoiMzdpOWRRWkYxRFg0WTRSaHJacUhociIsIm5hbWUiOiJCZWFjaCBQYXJ0eSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDRZNFJoclpxSGhyIn0seyJpZCI6IjM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MiLCJuYW1lIjoiVGhyb3diYWNrIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MifV19LCJjdWlzaW5lIjp7InR5cGUiOiJpdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYNlBTRERoODBneEkiLCJuYW1lIjoiSW5kaWUgSXRhbGlhIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYNlBTRERoODBneEkifSx7ImlkIjoiMzdpOWRRWkYxRFdZQm9mVWhwZ0U4OCIsIm5hbWUiOiJSYXAgTW90aXZhemlvbmFsZSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEV1lCb2ZVaHBnRTg4In0seyJpZCI6IjM3aTlkUVpGMURYM0V2VHJFU1ZtTjYiLCJuYW1lIjoiQ2FudGF1dG9yYXRvIEl0YWxpYW5vIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzM3aTlkUVpGMURYM0V2VHJFU1ZtTjYifSx7ImlkIjoiMzdpOWRRWkYxRFhhRkFKV1A2RGhOMCIsIm5hbWUiOiJGZXN0YSBJdGFsaWFuYSIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWGFGQUpXUDZEaE4wIn0seyJpZCI6IjM3aTlkUVpGMURYN2dHYlZZaVl3MUwiLCJuYW1lIjoiS2FyYW9rZSBJdGFsaWFubyIsInVybCI6Imh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9wbGF5bGlzdC8zN2k5ZFFaRjFEWDdnR2JWWWlZdzFMIn1dfSwiY29tYm9zIjp7InR5cGUiOlsicGFydHkiLCJpdGFsaWFuIl0sInBsYXlsaXN0cyI6W3siaWQiOiI3N1gyYjBwUW9NbElrRHZKV3VvbVpGIiwibmFtZSI6Ikl0YWxpYW4gRGlubmVyIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0Lzc3WDJiMHBRb01sSWtEdkpXdW9tWkYifSx7ImlkIjoiMHVCbTM5aVNzbjNlUHQxZ0Qyb2JWUCIsIm5hbWUiOiLimaUgREFSSyBXQUxUWiDimaUgKFZBTVBJUkUgTVVTSUMpIiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzB1Qm0zOWlTc24zZVB0MWdEMm9iVlAifSx7ImlkIjoiMVY4eFVNdmpUTkoxRE5QUmU4MGlQRyIsIm5hbWUiOiJJdGFsaWFuIHBhc3RhIHBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzFWOHhVTXZqVE5KMUROUFJlODBpUEcifSx7ImlkIjoiNzBwMm4yYWlSWXJiY1N3c1hVVXdzUSIsIm5hbWUiOiJJdGFsaWFuIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzcwcDJuMmFpUllyYmNTd3NYVVV3c1EifSx7ImlkIjoiMmUyd3dXMHBYT0M3dmxNNW5rMjVvSSIsIm5hbWUiOiIxOTYwcyBJdGFsaWFuIFBhcnR5IiwidXJsIjoiaHR0cHM6Ly9vcGVuLnNwb3RpZnkuY29tL3BsYXlsaXN0LzJlMnd3VzBwWE9DN3ZsTTVuazI1b0kifV19fX0=
+    http_version: null
+  recorded_at: Tue, 25 Feb 2020 02:05:14 GMT
+recorded_with: VCR 5.1.0
