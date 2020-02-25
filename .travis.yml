@@ -9,6 +9,8 @@ before_install:
  - nvm install node
 script:
  - bundle exec rails db:migrate RAILS_ENV=test
+ - bundle exec rails webpacker:install
+ - RAILS_ENV=test bundle exec rails webpacker:compile
  - bundle exec rspec
 services:
  - postgresql

@@ -2,7 +2,9 @@ class RecommendationsController < ApplicationController
   def new
   end
 
-  def create
-    redirect_to recommendations_path
+  def index
+    render locals: {
+      recommendations: RecommendationFacade.new(params, current_user.token)
+    }
   end
 end
