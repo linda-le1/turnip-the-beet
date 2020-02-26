@@ -9,12 +9,12 @@ RSpec.describe User, type: :model do
   end
 
   describe 'methods' do
-    it 'current_token?' do
+    it 'expired_token?' do
       user = create(:user, token_expires: Time.now - 10)
-      expect(user.current_token?).to be false
+      expect(user.expired_token?).to be true
 
       user_2 = create(:user)
-      expect(user_2.current_token?).to be true
+      expect(user_2.expired_token?).to be false
     end
   end
 end
