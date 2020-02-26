@@ -1,12 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'As a user' do
-  describe 'When I am on the new recommendations page' do
+  describe 'When I am on the new recommendations page', :vcr do
     it 'shows a field to put cuisine and mood' do
       user = create(:user, token: ENV['LINDA_TOKEN'], refresh_token: ENV['LINDA_REFRESH_TOKEN'])
 
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
-
       visit '/recommendations/new'
 
       expect(page).to have_select(:cuisine, text: "Italian")

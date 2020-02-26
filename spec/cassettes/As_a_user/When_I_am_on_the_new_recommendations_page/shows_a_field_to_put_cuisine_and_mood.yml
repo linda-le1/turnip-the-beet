@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=<LINDA_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 26 Feb 2020 17:38:21 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '1087'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"mood":{"type":"Party","playlists":[{"id":"37i9dQZF1DX1N5uK98ms5p","name":"Teen
+        Party"},{"id":"37i9dQZF1DX9oegrjMzKDW","name":"The Party Hits of the 2010s"},{"id":"37i9dQZF1DX4Y4RhrZqHhr","name":"Beach
+        Party"},{"id":"37i9dQZF1DWYubIwLN4Hq2","name":"Country Party"},{"id":"37i9dQZF1DXdgnLr18vPvu","name":"Tailgate
+        Party"}]},"cuisine":{"type":"Italian","playlists":[{"id":"37i9dQZF1DX2tOTQFakloP","name":"Best
+        of Rap Italia 2019"},{"id":"37i9dQZF1DXdG4hWlRQUsJ","name":"70s Italia"},{"id":"37i9dQZF1DX7gGbVYiYw1L","name":"Karaoke
+        Italiano"},{"id":"37i9dQZF1DXaFAJWP6DhN0","name":"Festa Italiana"},{"id":"37i9dQZF1DX14EWeH2Pwf3","name":"Rap
+        Italia: Battle Royale"}]},"combos":{"type":"Party Italian","playlists":[{"id":"4mIwrnKOSJSeBHglSPtCYF","name":"ITALIAN
+        PARTY"},{"id":"2crSCDRkHXX51hNPtS7vvq","name":"latin jazz / french / italian
+        lounge, jazz, tango, flamenco, 1940s, dinner party"},{"id":"7dA6TCr4N3izGeOggq4EIS","name":"Italian
+        Dinner"},{"id":"6cx2iQLHSEcxWWdLgZS9if","name":"LEGALIZE PARTY | Ska - Reggae
+        italiano"},{"id":"4TyWG2TUdpQ3K8XN0WM2z7","name":"GORE PARTY"}]}}}'
+    http_version: null
+  recorded_at: Wed, 26 Feb 2020 17:38:21 GMT
+recorded_with: VCR 5.1.0
