@@ -11,8 +11,10 @@ RSpec.describe User, type: :model do
   describe 'methods' do
     it 'current_token?' do
       user = create(:user, token_expires: Time.now - 10)
-
       expect(user.current_token?).to be false
+
+      user_2 = create(:user)
+      expect(user_2.current_token?).to be true
     end
   end
 end
