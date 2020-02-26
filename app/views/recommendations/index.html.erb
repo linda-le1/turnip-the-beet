@@ -1,3 +1,5 @@
+<%= render partial: '/partials/nav' %>
+
 <div class="container-fluid">
 
   <h1>Kale Yeah! &#x1f96c;</h1>
@@ -51,6 +53,16 @@
 <% @combo_ids = recommendations.combo_ids %>
 
 <script>
+
+// REFACTOR
+// function next(cusineIds, iframe) {
+//       cuisineIds.push(cuisineIds.shift())
+//         let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
+//         let iframeHTML = document.getElementById('iframe-cuisine');
+//         iframeHTML.src = playlistHTML;
+//   }
+//     cuisinePrevious.addEventListener('click', next;
+
 // PLAYLIST ID ARRAYS
   let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
   let moodIds = <%= @mood_ids.inspect.html_safe %>;
