@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'As a user' do
-  describe 'When I am on the new recommendations page' do
+  describe 'When I am on the new recommendations page', :vcr do
     it 'shows a field to put cuisine and mood' do
       user = create(:user, token: ENV['LINDA_TOKEN'], refresh_token: ENV['LINDA_REFRESH_TOKEN'])
 
