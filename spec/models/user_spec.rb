@@ -7,4 +7,12 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of :token }
     it { should validate_presence_of :refresh_token }
   end
+
+  describe 'methods' do
+    it 'current_token?' do
+      user = create(:user, token_expires: Time.now - 10)
+
+      expect(user.current_token?).to be false
+    end
+  end
 end
