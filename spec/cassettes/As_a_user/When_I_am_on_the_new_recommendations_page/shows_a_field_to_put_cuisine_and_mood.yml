@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 26 Feb 2020 15:49:50 GMT
+      - Wed, 26 Feb 2020 17:38:21 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -29,106 +29,22 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '1043'
+      - '1087'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"mood":{"type":"Party","playlists":[{"id":"37i9dQZF1DXdnyffTsenNZ","name":"Party
-        Life"},{"id":"37i9dQZF1DX9EM98aZosoy","name":"Partyhymnen"},{"id":"37i9dQZF1DXe9hay4VT07f","name":"Dancehall
-        Party"},{"id":"37i9dQZF1DX0MXH7aN4Pxn","name":"All Night Dance Party"},{"id":"37i9dQZF1DXaXB8fQg7xif","name":"Dance
-        Party"}]},"cuisine":{"type":"Italian","playlists":[{"id":"37i9dQZF1DX6PSDDh80gxI","name":"Indie
-        Italia"},{"id":"37i9dQZF1DWT1R6bXL4dyW","name":"The Perfect Italian Dinner"},{"id":"37i9dQZF1DWTqE3nGpRCBE","name":"Best
-        of Indie Italia 2019"},{"id":"37i9dQZF1DXdG4hWlRQUsJ","name":"70s Italia"},{"id":"37i9dQZF1DX14EWeH2Pwf3","name":"Rap
-        Italia: Battle Royale"}]},"combos":{"type":"Party Italian","playlists":[{"id":"4TyWG2TUdpQ3K8XN0WM2z7","name":"GORE
-        PARTY"},{"id":"4oGn4b0Is6zzDLMIvS7Ygu","name":"Dinner Party/ Italian food
-        cooking! ;)"},{"id":"6ppnEMUmecsWZYjORrwd0O","name":"Italian Dinner Party"},{"id":"3LNXlkjjqpFjatpNYGhUNp","name":"Grown
-        up Dinner Party music"},{"id":"70p2n2aiRYrbcSwsXUUwsQ","name":"Italian Party"}]}}}'
+      string: '{"data":{"mood":{"type":"Party","playlists":[{"id":"37i9dQZF1DX1N5uK98ms5p","name":"Teen
+        Party"},{"id":"37i9dQZF1DX9oegrjMzKDW","name":"The Party Hits of the 2010s"},{"id":"37i9dQZF1DX4Y4RhrZqHhr","name":"Beach
+        Party"},{"id":"37i9dQZF1DWYubIwLN4Hq2","name":"Country Party"},{"id":"37i9dQZF1DXdgnLr18vPvu","name":"Tailgate
+        Party"}]},"cuisine":{"type":"Italian","playlists":[{"id":"37i9dQZF1DX2tOTQFakloP","name":"Best
+        of Rap Italia 2019"},{"id":"37i9dQZF1DXdG4hWlRQUsJ","name":"70s Italia"},{"id":"37i9dQZF1DX7gGbVYiYw1L","name":"Karaoke
+        Italiano"},{"id":"37i9dQZF1DXaFAJWP6DhN0","name":"Festa Italiana"},{"id":"37i9dQZF1DX14EWeH2Pwf3","name":"Rap
+        Italia: Battle Royale"}]},"combos":{"type":"Party Italian","playlists":[{"id":"4mIwrnKOSJSeBHglSPtCYF","name":"ITALIAN
+        PARTY"},{"id":"2crSCDRkHXX51hNPtS7vvq","name":"latin jazz / french / italian
+        lounge, jazz, tango, flamenco, 1940s, dinner party"},{"id":"7dA6TCr4N3izGeOggq4EIS","name":"Italian
+        Dinner"},{"id":"6cx2iQLHSEcxWWdLgZS9if","name":"LEGALIZE PARTY | Ska - Reggae
+        italiano"},{"id":"4TyWG2TUdpQ3K8XN0WM2z7","name":"GORE PARTY"}]}}}'
     http_version: null
-  recorded_at: Wed, 26 Feb 2020 15:49:50 GMT
-- request:
-    method: get
-    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=<LINDA_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.0.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Wed, 26 Feb 2020 15:49:51 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      X-Content-Type-Options:
-      - nosniff
-      Content-Length:
-      - '1049'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"data":{"mood":{"type":"Party","playlists":[{"id":"37i9dQZF1DX5Ozry5U6G0d","name":"Summer
-        Party"},{"id":"37i9dQZF1DX2CqFedmO3RP","name":"Party Chale On"},{"id":"37i9dQZF1DXd5DCuoVuFY3","name":"House
-        Party"},{"id":"37i9dQZF1DX4RDXswvP6Mj","name":"K-Party Dance Mix"},{"id":"37i9dQZF1DWTujiC7wfofZ","name":"Indie
-        Party"}]},"cuisine":{"type":"Italian","playlists":[{"id":"37i9dQZF1DZ06evO3a677y","name":"This
-        Is ItaloBrothers"},{"id":"37i9dQZF1DX2tOTQFakloP","name":"Best of Rap Italia
-        2019"},{"id":"37i9dQZF1DX6wfQutivYYr","name":"Hot Hits Italia"},{"id":"37i9dQZF1DX14EWeH2Pwf3","name":"Rap
-        Italia: Battle Royale"},{"id":"37i9dQZF1DXaFAJWP6DhN0","name":"Festa Italiana"}]},"combos":{"type":"Party
-        Italian","playlists":[{"id":"3LNXlkjjqpFjatpNYGhUNp","name":"Grown up Dinner
-        Party music"},{"id":"4oGn4b0Is6zzDLMIvS7Ygu","name":"Dinner Party/ Italian
-        food cooking! ;)"},{"id":"0mixJc9BcVLJ1UnkvR8Dur","name":"MAMBO ITALIANO"},{"id":"2XjLPQUKzp6s2Ray020bW7","name":"International
-        Party"},{"id":"1V8xUMvjTNJ1DNPRe80iPG","name":"Italian pasta party"}]}}}'
-    http_version: null
-  recorded_at: Wed, 26 Feb 2020 15:49:51 GMT
-- request:
-    method: get
-    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=<LINDA_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.0.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Wed, 26 Feb 2020 15:49:52 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      X-Content-Type-Options:
-      - nosniff
-      Content-Length:
-      - '1098'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6IlBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURYNFJEWHN3dlA2TWoiLCJuYW1lIjoiSy1QYXJ0eSBEYW5jZSBNaXgifSx7ImlkIjoiMzdpOWRRWkYxRFdZdWJJd0xONEhxMiIsIm5hbWUiOiJDb3VudHJ5IFBhcnR5In0seyJpZCI6IjM3aTlkUVpGMURYOXZKMlUzc043eGoiLCJuYW1lIjoiRmllc3RhIn0seyJpZCI6IjM3aTlkUVpGMURXVFVmdjJ5ekhFZTciLCJuYW1lIjoiQm9sbHl3b29kIFBhcnR5In0seyJpZCI6IjM3aTlkUVpGMURYMXRMSFpIT2tFVlIiLCJuYW1lIjoiV2VkZGluZyBQYXJ0eSJ9XX0sImN1aXNpbmUiOnsidHlwZSI6Ikl0YWxpYW4iLCJwbGF5bGlzdHMiOlt7ImlkIjoiMzdpOWRRWkYxRFgwMU5QNzNFckU4YiIsIm5hbWUiOiJJdGFsaWEgaW4gQWx0YSBSb3RhemlvbmUifSx7ImlkIjoiMzdpOWRRWkYxRFgydE9UUUZha2xvUCIsIm5hbWUiOiJCZXN0IG9mIFJhcCBJdGFsaWEgMjAxOSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDE0RVdlSDJQd2YzIiwibmFtZSI6IlJhcCBJdGFsaWE6IEJhdHRsZSBSb3lhbGUifSx7ImlkIjoiMzdpOWRRWkYxRFhjdVZ0dExlUXhraCIsIm5hbWUiOiJIaXQgSXRhbGlhbmUifSx7ImlkIjoiMzdpOWRRWkYxRFg2d2ZRdXRpdllZciIsIm5hbWUiOiJIb3QgSGl0cyBJdGFsaWEifV19LCJjb21ib3MiOnsidHlwZSI6IlBhcnR5IEl0YWxpYW4iLCJwbGF5bGlzdHMiOlt7ImlkIjoiMm5EVWhFMFBOZUdGejlZS2IyV0pEWSIsIm5hbWUiOiJJdGFsaWFuIERpbm5lciBQYXJ0eSJ9LHsiaWQiOiI3Mm5IT1gzR0FrY0F4UWo5TFRNSWQxIiwibmFtZSI6Ik1pZ2xpb3JpIGNhbnpvbmkgaXRhbGlhbmUgZW50cm8gaWwgMjAxOCAtIEl0YWxpYW4gU29uZ3MsIEl0YWxpYW4gUGFydHksIE5vdHRlIEl0YWxpYSwgSXRhbGlhbiBOaWdodCJ9LHsiaWQiOiI0VHlXRzJUVWRwUTNLOFhOMFdNMno3IiwibmFtZSI6IkdPUkUgUEFSVFkifSx7ImlkIjoiNkEwYVJLbTFySW9kTjdIWUdKc0x3NiIsIm5hbWUiOiJUZWNobm8gUGFydHkg8J+YjiJ9LHsiaWQiOiIzR2lBUUxzdGpSM1VVeXJBbXNaTFVLIiwibmFtZSI6Ikl0YWxpYW4gU3VtbWVyIFBhcnR5In1dfX19
-    http_version: null
-  recorded_at: Wed, 26 Feb 2020 15:49:52 GMT
+  recorded_at: Wed, 26 Feb 2020 17:38:21 GMT
 recorded_with: VCR 5.1.0
