@@ -6,6 +6,18 @@ class RecommendationFacade
     @params = params
   end
 
+  def mood_ids
+    moods.map(&:id)
+  end
+
+  def cuisine_ids
+    cuisines.map(&:id)
+  end
+
+  def combo_ids
+    combos.map(&:id)
+  end
+
   def moods
     service.recommendations[:mood][:playlists].map do |playlist_hash|
       Playlist.new(playlist_hash)
