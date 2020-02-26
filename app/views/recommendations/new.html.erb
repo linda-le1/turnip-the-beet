@@ -1,8 +1,8 @@
+<%= render partial: '/partials/nav' %>
+
 <%= bootstrap_form_tag url: '/recommendations', method: :get do |f| %>
 <%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
 { label: "Cuisine:", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
 <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunshiny", "sunshiny"] ], { label: "Mood:", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
 <%= f.submit "Harvest Your Beets!" %>
 <% end %>
-
-
