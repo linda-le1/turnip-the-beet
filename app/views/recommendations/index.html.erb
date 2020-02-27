@@ -1,41 +1,32 @@
+<%= render partial: '/partials/nav' %>
+<h1>Kale Yeah! &#x1f96c;</h1>
+<h4>We have beets for you:</h4>
+<br>
 
-<div class="container-fluid">
 <div class="loader">
     <img src="https://media.giphy.com/media/pOJSTsYw7fVVyPvThs/giphy.gif" alt="Loading..." />
 </div>
 
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
-    loader.className += " hidden";
-});
-</script>
+<% @cuisine_ids = recommendations.cuisine_ids %>
+<% @mood_ids = recommendations.mood_ids %>
+<% @combo_ids = recommendations.combo_ids %>
+<% @token = current_user.token %>
 
-<%= render partial: '/partials/nav' %>
-
-
-  <h1>Kale Yeah! &#x1f96c;</h1>
-  <h4>We have beets for you:</h4>
-  <br>
-
-  <div class="row">
-
-    <div class="col" id='cuisine'>
-      <h3>Cuisine Playlists</h3>
-      <iframe id='iframe-cuisine' src="https://open.spotify.com/embed/playlist/<%= recommendations.cuisine_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <br>
-      <button id='cuisine-previous' class='btn btn-secondary btn-sm'>Previous
-      </button>
-      <button id='cuisine-follow', class='btn btn-secondary btn-success btn-sm'>Follow on Spotify
-      </button>
-      <button id='cuisine-next' class='btn btn-secondary btn-sm'>Next
-      </button>
-    </div>
+<div>
+  <div class="col" id='cuisine'>
+  <h3>Cuisine Playlists</h3>
+    <section id ='cuisine-iframe'></section>
+    <button id='cuisine-previous' class='btn btn-secondary btn-sm'>Previous
+    </button>
+    <button id='cuisine-follow', class='btn btn-secondary btn-success btn-sm'>Follow on Spotify
+    </button>
+    <button id='cuisine-next' class='btn btn-secondary btn-sm'>Next
+    </button>
+  </div>
 
     <div class="col" id='mood'>
       <h3>Mood Playlists</h3>
-      <iframe id='iframe-mood' src="https://open.spotify.com/embed/playlist/<%= recommendations.mood_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <br>
+      <section id ='mood-iframe'></section>
       <button id='mood-previous' class='btn btn-secondary btn-sm'>Previous
       </button>
       <button id='mood-follow', class='btn btn-secondary btn-success btn-sm'>Follow on Spotify
@@ -46,8 +37,7 @@
 
     <div class="col" id='combo'>
       <h3>Home Harvested Playlists</h3>
-      <iframe id='iframe-combo' src="https://open.spotify.com/embed/playlist/<%= recommendations.combo_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <br>
+      <section id ='combo-iframe'></section>
       <button id='combo-previous' class='btn btn-secondary btn-sm'>Previous
       </button>
       <button id='combo-follow', class='btn btn-secondary btn-success btn-sm'>Follow on Spotify
@@ -57,34 +47,31 @@
     </div>
   </div>
 
-
-<% @cuisine_ids = recommendations.cuisine_ids %>
-<% @mood_ids = recommendations.mood_ids %>
-<% @combo_ids = recommendations.combo_ids %>
-<% @token = current_user.token %>
-
 <script>
 
-// REFACTOR
-// function next(cusineIds, iframe) {
-//       cuisineIds.push(cuisineIds.shift())
-//         let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
-//         let iframeHTML = document.getElementById('iframe-cuisine');
-//         iframeHTML.src = playlistHTML;
-//   }
-//     cuisinePrevious.addEventListener('click', next;
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
+});
 
-// PLAYLIST ID ARRAYS
-  let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
-  let moodIds = <%= @mood_ids.inspect.html_safe %>;
-  let comboIds = <%= @combo_ids.inspect.html_safe %>;
-  let token = <%= @token.inspect.html_safe %>;
+let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
+let moodIds = <%= @mood_ids.inspect.html_safe %>;
+let comboIds = <%= @combo_ids.inspect.html_safe %>;
+let token = <%= @token.inspect.html_safe %>;
 
-// CUISINE PLAYLIST BUTTONS
+window.addEventListener("load", function () {
+        var cuisinePlayer = document.createElement("IFRAME");
+        cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`);
+        cuisinePlayer.style.height = 400 + "px";
+        cuisinePlayer.style.width = 420 + "px";
+        cuisinePlayer.id='iframe-cuisine';
+        document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
+    });
+
   const cuisinePrevious = document.getElementById('cuisine-previous');
   cuisinePrevious.addEventListener('click', function() {
         cuisineIds.push(cuisineIds.shift())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
+        playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
         let iframeHTML = document.getElementById('iframe-cuisine');
         iframeHTML.src = playlistHTML;
   });
