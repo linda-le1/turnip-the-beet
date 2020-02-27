@@ -30,12 +30,13 @@ RSpec.describe 'As a user' do
       expect(page).to have_select(:mood, text: "Classy")
       expect(page).to have_select(:mood, text: "Romantic")
       expect(page).to have_select(:mood, text: "Folksy")
-      expect(page).to have_select(:mood, text: "Sunshiny")
+      expect(page).to have_select(:mood, text: "Sunny")
+      expect(page).to have_select(:mood, text: "Frisky")
 
       select "Italian", from: :cuisine
       select "Party", from: :mood
 
-      click_button 'Harvest Your Beets!'
+      click_button 'Harvest Your Beats!'
 
       expect(current_path).to eq('/recommendations')
     end
