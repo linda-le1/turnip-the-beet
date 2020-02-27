@@ -12,7 +12,7 @@
 
 <div class="index-container">
 
-  <h1 id='kale-title'>   Kale Yeah! &#x1f96c;</h1>
+  <h1 id='kale-title'>Kale Yeah! &#x1f96c;</h1>
   <h4 id='kale-subtitle'>&#x1F3B6 we have beats for you &#x1F3B6</h4>
   <br>
 
@@ -94,7 +94,7 @@ window.addEventListener("load", function () {
   const cuisinePrevious = document.getElementById('cuisine-previous');
   cuisinePrevious.addEventListener('click', function() {
         cuisineIds.push(cuisineIds.shift())
-        playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds}`
         let iframeHTML = document.getElementById('iframe-cuisine');
         iframeHTML.src = playlistHTML;
   });
@@ -125,7 +125,7 @@ window.addEventListener("load", function () {
   const cuisineNext = document.getElementById('cuisine-next');
   cuisineNext.addEventListener('click', function() {
         cuisineIds.unshift(cuisineIds.pop())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds}`
         let iframeHTML = document.getElementById('iframe-cuisine');
         iframeHTML.src = playlistHTML;
   });
@@ -134,7 +134,7 @@ window.addEventListener("load", function () {
   const moodPrevious = document.getElementById('mood-previous');
   moodPrevious.addEventListener('click', function() {
         moodIds.push(moodIds.shift())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds[1]}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds}`
         let iframeHTML = document.getElementById('iframe-mood');
         iframeHTML.src = playlistHTML;
   });
@@ -164,7 +164,7 @@ window.addEventListener("load", function () {
   const moodNext = document.getElementById('mood-next');
   moodNext.addEventListener('click', function() {
         moodIds.unshift(moodIds.pop())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds[1]}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds}`
         let iframeHTML = document.getElementById('iframe-mood');
         iframeHTML.src = playlistHTML;
   });
@@ -173,7 +173,7 @@ window.addEventListener("load", function () {
   const comboPrevious = document.getElementById('combo-previous');
   comboPrevious.addEventListener('click', function() {
         comboIds.push(comboIds.shift())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds[1]}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds}`
         let iframeHTML = document.getElementById('iframe-combo');
         iframeHTML.src = playlistHTML;
   });
@@ -203,7 +203,7 @@ window.addEventListener("load", function () {
   const comboNext = document.getElementById('combo-next');
   comboNext.addEventListener('click', function() {
         comboIds.unshift(comboIds.pop())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds[1]}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds}`
         let iframeHTML = document.getElementById('iframe-combo');
         iframeHTML.src = playlistHTML;
   });
