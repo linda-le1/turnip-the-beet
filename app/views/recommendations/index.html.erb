@@ -60,12 +60,26 @@ let comboIds = <%= @combo_ids.inspect.html_safe %>;
 let token = <%= @token.inspect.html_safe %>;
 
 window.addEventListener("load", function () {
-        var cuisinePlayer = document.createElement("IFRAME");
-        cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`);
-        cuisinePlayer.style.height = 400 + "px";
-        cuisinePlayer.style.width = 420 + "px";
-        cuisinePlayer.id='iframe-cuisine';
-        document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
+    var cuisinePlayer = document.createElement("IFRAME");
+    cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`);
+    cuisinePlayer.style.height = 400 + "px";
+    cuisinePlayer.style.width = 420 + "px";
+    cuisinePlayer.id='iframe-cuisine';
+    document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
+
+    var moodPlayer = document.createElement("IFRAME");
+    moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[1]}`);
+    moodPlayer.style.height = 400 + "px";
+    moodPlayer.style.width = 420 + "px";
+    moodPlayer.id='iframe-mood';
+    document.getElementById("mood-iframe").appendChild(moodPlayer);
+
+    var comboPlayer = document.createElement("IFRAME");
+    comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[1]}`);
+    comboPlayer.style.height = 400 + "px";
+    comboPlayer.style.width = 420 + "px";
+    comboPlayer.id='iframe-combo';
+    document.getElementById("combo-iframe").appendChild(comboPlayer);
     });
 
   const cuisinePrevious = document.getElementById('cuisine-previous');
