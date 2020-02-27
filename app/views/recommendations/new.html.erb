@@ -26,6 +26,13 @@
     <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge-light' %>
     <% end %>
   </div>
+
+    <section id='feeling-wild'>
+      <p>Not sure what to cook? Click this button and we will return some playlists for a random vibe and cuisine!</p>
+      <%= button_to 'Guac my world', '/recommendations/random', class: 'btn btn-secondary btn-success btn-sm', method: :get %>
+    </section>
+
+    </div>
 <% end %>
 
   </div>
