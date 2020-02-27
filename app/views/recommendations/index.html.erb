@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<%= render partial: '/partials/nav' %>
 
   <h1>Kale Yeah! &#x1f96c;</h1>
   <h4>We have beets for you:</h4>
@@ -10,16 +10,12 @@
       <h3>Cuisine Playlists</h3>
       <iframe id='iframe-cuisine' src="https://open.spotify.com/embed/playlist/<%= recommendations.cuisine_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <br>
-      <!-- <div class='text-center'> -->
       <button id='cuisine-previous' class='btn btn-secondary btn-sm'>Previous
       </button>
-
       <button id='cuisine-follow', class='btn btn-secondary btn-success btn-sm'>Follow on Spotify
       </button>
-
       <button id='cuisine-next' class='btn btn-secondary btn-sm'>Next
       </button>
-      <!-- </div> -->
     </div>
 
     <div class="col" id='mood'>
@@ -46,7 +42,7 @@
       </button>
     </div>
   </div>
-</div>
+
 
 <% @cuisine_ids = recommendations.cuisine_ids %>
 <% @mood_ids = recommendations.mood_ids %>
@@ -54,6 +50,16 @@
 <% @token = current_user.token %>
 
 <script>
+
+// REFACTOR
+// function next(cusineIds, iframe) {
+//       cuisineIds.push(cuisineIds.shift())
+//         let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`
+//         let iframeHTML = document.getElementById('iframe-cuisine');
+//         iframeHTML.src = playlistHTML;
+//   }
+//     cuisinePrevious.addEventListener('click', next;
+
 // PLAYLIST ID ARRAYS
   let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
   let moodIds = <%= @mood_ids.inspect.html_safe %>;

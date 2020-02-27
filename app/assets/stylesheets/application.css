@@ -1,22 +1,97 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- /* *= require_rails_bootstrap_forms */
 
- img {
-   width: 100%;
-   height: 20px;
-   opacity: 0.3;
- }
+#home-title {
+  font-size: 11rem;
+  font-family: 'Baloo Bhai';
+  color: #ff4d2e;
+  text-align: center;
+  text-shadow: 3px 2px 2px white;
+  align-items: flex-start;
+}
+
+#home-text {
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+#veggie-emojis  {
+  text-align: center;
+}
+
+#lettuce-begin  {
+  font-size: 8rem;
+  font-family: 'Baloo Bhai';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff4d2e;
+}
+
+.home-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+h1.title-container {
+  display: flex;
+  align-items: center;
+}
+
+h3.body-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#body-container {
+  padding-top: 50px;
+}
+
+#home-button  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lettuce-section  {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#emoji-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-huge {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  font-size: 2rem;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-duration: .15s;
+}
+
+.btn-huge:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}

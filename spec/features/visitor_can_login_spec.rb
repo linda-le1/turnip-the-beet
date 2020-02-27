@@ -15,7 +15,7 @@ describe 'As a visitor' do
 
     visit '/'
 
-    click_button "Lettuce Begin (Log in with Spotify)"
+    click_button "Log in with Spotify"
 
     user = User.last
 
@@ -39,7 +39,7 @@ describe 'As a visitor' do
 
     visit '/'
 
-    click_button "Lettuce Begin (Log in with Spotify)"
+    click_button "Log in with Spotify"
 
     expect(User.all.count).to eq(1)
 
@@ -63,7 +63,7 @@ describe 'As a visitor' do
 
     visit '/'
 
-    click_button "Lettuce Begin (Log in with Spotify)"
+    click_button "Log in with Spotify"
 
     expect(User.count).to eq(2)
   end
