@@ -8,7 +8,7 @@ describe 'as a logged in user' do
 
       visit '/recommendations/new'
 
-      expect(page).to have_content "TOKEN EXPIRED"
+      expect(page).to have_content "Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify"
       expect(page).not_to have_button "Harvest Your Beets!"
     end
   end
