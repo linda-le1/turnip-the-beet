@@ -1,3 +1,5 @@
+<body class='recommendations-new'>
+
 <% if !current_user %>
   <%= render partial: '/partials/nav' %>
   <h1 id='sad-path'>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%=link_to 'here', '/', id: 'sad-link' %> &#x1F966</h1>
@@ -11,19 +13,21 @@
     <%= bootstrap_form_tag url: '/recommendations', method: :get do |f| %>
     <div class="form">
 
-    <h1 id='questions'>What's on the menu?</h1>
+    <h1 class='questions' id='question-1'>What's on the menu?</h1>
 
       <%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
-      { label: "Cuisine:", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+      { label: "hi", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
 
-    <h1 id='questions'>How you feelin'?</h1>
+    <h1 class='questions' id='question-2'>How you feelin'?</h1>
 
     <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunny", "sunny"], ["Frisky", "frisky"] ],
-    { label: "Mood:", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %><br><br>
+    { label: " ", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %><br><br>
 
-    <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge' %>
+    <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge-light' %>
     <% end %>
-    </div>
+  </div>
 <% end %>
 
   </div>
+
+</body>
