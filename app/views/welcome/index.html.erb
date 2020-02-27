@@ -1,20 +1,31 @@
-<%# <h1> Turnip the Beet </h1> %>
-<img src="https://cdn.britannica.com/s:700x500/17/196817-050-6A15DAC3/vegetables.jpg", class="img-fluid" alt="Responsive veggie image">
-<%# <div style="background-image: 'https://cdn.britannica.com/s:700x500/17/196817-050-6A15DAC3/vegetables.jpg');"> %>
+<body class='home'>
 
+  <div class="home-container">
 
+    <div id="title-container">
+      <h1 id="home-title">Turnip the Beet</h1>
+      <h1 id="veggie-emojis" style="font-size:100px">&#x1F345 &#x1F951 &#x1F955 &#x1F96C &#x1F33D</h1>
+    </div>
 
+    <div id="home-button">
+      <% if !current_user %>
+        <%= button_to "Log in with Spotify", "/auth/spotify", class: "btn-huge", method: :get %>
+      <% elsif current_user && current_user.expired_token? %>
+        <%= button_to "Log in with Spotify", "/auth/spotify", class: "btn-huge", method: :get %>
+      <% else %>
+        <%= button_to "Farm Some Beats", "/recommendations/new", class: "btn-huge", method: :get %>
+      <% end %>
+    </div>
 
-<% if !current_user %>
-  <div class="col text-center">
-  <h3><br>
-  <%= "" %><br>
-  <%= "" %><br>
-  <%= "" %><br>
-  <%= "" %><br>
-  <%= "" %><br>
-  <%= "" %><br></h3>
+    <div id="body-container">
+      <h3 id="home-text">Tell us what you're cooking and we'll farm some beats for you!</h3>
+      <h3 id="emoji-container-2" style="font-size:100px">&#x1F4FB &#x1F3B6 &#x1F4FC</h3>
+    </div>
 
-    <%= button_to "Lettuce Begin (Log in with Spotify)", "/auth/spotify", class: "btn btn-success", method: :get %>
+    <div id="lettuce-section">
+      <h2 id="lettuce-begin">#lettucebegin</h2>
+    </div>
+
   </div>
-<% end %>
+
+</body>

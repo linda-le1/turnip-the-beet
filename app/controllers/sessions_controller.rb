@@ -1,12 +1,15 @@
 class SessionsController < ApplicationController
   def create
     if user = User.find_by(uid: uid)
-      user.update(token: token, refresh_token: refresh_token)
+      user.update(token: token,
+      refresh_token: refresh_token,
+      token_expires: Time.now + 3600)
     else
-      user = User.create(uid: uid,
+      user = User.create!(uid: uid,
       display_name: display_name,
       token: token,
-      refresh_token: refresh_token)
+      refresh_token: refresh_token,
+      token_expires: Time.now + 3600)
     end
     flash[:notice] = "Welcome, #{user.display_name}!"
     redirect_to '/recommendations/new'
