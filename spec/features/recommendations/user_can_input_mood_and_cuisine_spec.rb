@@ -40,5 +40,22 @@ RSpec.describe 'As a user' do
 
       expect(current_path).to eq('/recommendations')
     end
+
+    it 'shows a button to generate a random cuisine and mood' do
+      user = create(:user, token: ENV['LINDA_TOKEN'], refresh_token: ENV['LINDA_REFRESH_TOKEN'])
+
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+      visit '/recommendations/new'
+
+      within "#feeling-wild" do
+        click_button 'Guac my world'
+      end
+
+      expect(current_path).to eq('/recommendations/random')
+
+      expect(page).to have_selector '#mood'
+      expect(page).to have_selector '#cuisine'
+      expect(page).to have_selector '#combo'
+    end
   end
 end

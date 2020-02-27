@@ -3,7 +3,11 @@ Rails.application.routes.draw do
 
   get '/', to: 'welcome#index'
   get '/auth/spotify/callback', to: 'sessions#create'
-  resources :recommendations, only: [:create, :new, :index]
+  resources :recommendations, only: [:create, :new, :index] 
+  
+  namespace 'recommendations' do
+    get '/random', to: 'random#index'
+  end
 
   delete '/sessions/:id', to: 'sessions#destroy'
 end
