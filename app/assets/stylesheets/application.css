@@ -35,6 +35,75 @@ img {
   }
 }
 
+.top-nav {
+  background-color: #28a745;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 4rem;
+}
+
+#site-title {
+  font-family: 'Baloo Bhai';
+  color: white;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .form-control {
+  font-size: 2rem;
+} */
+
+#questions  {
+  display: flex;
+  font-family: 'Baloo Bhai';
+  font-size: 6rem;
+  color: #ff4d2e;
+  justify-content: center;
+}
+
+label {
+  color: white;
+}
+
+#log-out {
+  font-family: 'Baloo Bhai';
+  color: white;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+}
+
+#sad-path {
+  font-size: 6rem;
+  font-family: 'Baloo Bhai';
+  color: #ff4d2e;
+}
+
+#sad-link {
+  color: #ff4d2e;
+  text-decoration: underline;
+}
+
 #home-title {
   font-size: 11rem;
   font-family: 'Baloo Bhai';
@@ -127,6 +196,33 @@ h3.body-container {
 }
 
 .btn-huge:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-less-huge {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-duration: .15s;
+}
+
+.btn-less-huge:hover {
   color: #fff;
   background-color: #218838;
   border-color: #1e7e34;
