@@ -9,11 +9,11 @@
 
     <div id="home-button">
       <% if !current_user %>
-        <%= button_to "Log in with Spotify", "/auth/spotify", class: "btn-huge", method: :get %>
+        <%= button_to "Log in with Spotify", "/auth/spotify", class: "btn-less-huge-dark", method: :get %>
       <% elsif current_user && current_user.expired_token? %>
-        <%= button_to "Log in with Spotify", "/auth/spotify", class: "btn-huge", method: :get %>
+        <%= button_to "Log in with Spotify", "/auth/spotify", class: "btn-less-huge-dark", method: :get %>
       <% else %>
-        <%= button_to "Farm Some Beats", "/recommendations/new", class: "btn-huge", method: :get %>
+        <%= button_to "Farm Some Beats", "/recommendations/new", class: "btn-less-huge-dark", method: :get %>
       <% end %>
     </div>
 
