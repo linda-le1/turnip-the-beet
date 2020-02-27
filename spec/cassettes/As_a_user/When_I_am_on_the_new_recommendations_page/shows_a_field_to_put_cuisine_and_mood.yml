@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 26 Feb 2020 17:38:21 GMT
+      - Thu, 27 Feb 2020 21:32:44 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -29,22 +29,13 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '1087'
+      - '1105'
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"data":{"mood":{"type":"Party","playlists":[{"id":"37i9dQZF1DX1N5uK98ms5p","name":"Teen
-        Party"},{"id":"37i9dQZF1DX9oegrjMzKDW","name":"The Party Hits of the 2010s"},{"id":"37i9dQZF1DX4Y4RhrZqHhr","name":"Beach
-        Party"},{"id":"37i9dQZF1DWYubIwLN4Hq2","name":"Country Party"},{"id":"37i9dQZF1DXdgnLr18vPvu","name":"Tailgate
-        Party"}]},"cuisine":{"type":"Italian","playlists":[{"id":"37i9dQZF1DX2tOTQFakloP","name":"Best
-        of Rap Italia 2019"},{"id":"37i9dQZF1DXdG4hWlRQUsJ","name":"70s Italia"},{"id":"37i9dQZF1DX7gGbVYiYw1L","name":"Karaoke
-        Italiano"},{"id":"37i9dQZF1DXaFAJWP6DhN0","name":"Festa Italiana"},{"id":"37i9dQZF1DX14EWeH2Pwf3","name":"Rap
-        Italia: Battle Royale"}]},"combos":{"type":"Party Italian","playlists":[{"id":"4mIwrnKOSJSeBHglSPtCYF","name":"ITALIAN
-        PARTY"},{"id":"2crSCDRkHXX51hNPtS7vvq","name":"latin jazz / french / italian
-        lounge, jazz, tango, flamenco, 1940s, dinner party"},{"id":"7dA6TCr4N3izGeOggq4EIS","name":"Italian
-        Dinner"},{"id":"6cx2iQLHSEcxWWdLgZS9if","name":"LEGALIZE PARTY | Ska - Reggae
-        italiano"},{"id":"4TyWG2TUdpQ3K8XN0WM2z7","name":"GORE PARTY"}]}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6IlBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURXWHRpM040V3A1eHkiLCJuYW1lIjoiUG9wIFBhcnR5In0seyJpZCI6IjM3aTlkUVpGMURYN0Y2VDJuMmZlZ3MiLCJuYW1lIjoiVGhyb3diYWNrIFBhcnR5In0seyJpZCI6IjM3aTlkUVpGMURYME1YSDdhTjRQeG4iLCJuYW1lIjoiQWxsIE5pZ2h0IERhbmNlIFBhcnR5In0seyJpZCI6IjM3aTlkUVpGMURYMU41dUs5OG1zNXAiLCJuYW1lIjoiVGVlbiBQYXJ0eSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDl2SjJVM3NON3hqIiwibmFtZSI6IkZpZXN0YSJ9XX0sImN1aXNpbmUiOnsidHlwZSI6Ikl0YWxpYW4iLCJwbGF5bGlzdHMiOlt7ImlkIjoiMzdpOWRRWkVWWGJJUW5qN1JSaGRTWCIsIm5hbWUiOiJJdGFseSBUb3AgNTAifSx7ImlkIjoiMzdpOWRRWkYxRFdUMVI2YlhMNGR5VyIsIm5hbWUiOiJUaGUgUGVyZmVjdCBJdGFsaWFuIERpbm5lciJ9LHsiaWQiOiIzN2k5ZFFaRjFEWjA2ZXZPM2E2Nzd5IiwibmFtZSI6IlRoaXMgSXMgSXRhbG9Ccm90aGVycyJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDAxTlA3M0VyRThiIiwibmFtZSI6Ikl0YWxpYSBpbiBBbHRhIFJvdGF6aW9uZSJ9LHsiaWQiOiIzN2k5ZFFaRjFEWGFGQUpXUDZEaE4wIiwibmFtZSI6IkZlc3RhIEl0YWxpYW5hIn1dfSwiY29tYm9zIjp7InR5cGUiOiJQYXJ0eSBJdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjdmSHRaTlgyOTJQcTZxY2JlSGJic1QiLCJuYW1lIjoic3RlcmVvdHlwaWNhbCBpdGFsaWFuIG11c2ljIn0seyJpZCI6IjZwcG5FTVVtZWNzV1pZak9ScndkME8iLCJuYW1lIjoiSXRhbGlhbiBEaW5uZXIgUGFydHkifSx7ImlkIjoiMDROTmJBVzVGZnZHUVdwYmlHeW5YOCIsIm5hbWUiOiJQZXJmZWN0IHBhcnR5IGhpdHMgZXN0YXRlIDIwMTkgLSBwbGF5bGlzdCBwZXJmZXR0YSBwZXIgZmFyIGJhbGxhcmUgbGFnZ2dlbnRlIn0seyJpZCI6IjZBMGFSS20xcklvZE43SFlHSnNMdzYiLCJuYW1lIjoiVGVjaG5vIFBhcnR5IPCfmI4ifSx7ImlkIjoiNmN4MmlRTEhTRWN4V1dkTGdaUzlpZiIsIm5hbWUiOiJMRUdBTElaRSBQQVJUWSB8IFNrYSAtIFJlZ2dhZSBpdGFsaWFubyJ9XX19fQ==
     http_version: null
-  recorded_at: Wed, 26 Feb 2020 17:38:21 GMT
+  recorded_at: Thu, 27 Feb 2020 21:32:44 GMT
 recorded_with: VCR 5.1.0
