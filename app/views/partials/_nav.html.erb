@@ -1,20 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-  <a class="navbar-brand mb-0 h1" href="/">Turnip the Beet</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarText">
-    <% if current_user %>
-      <ul class="nav navbar-nav pull-right">
-        <li class="nav-item">
-          <%= link_to 'Farm Some Beets', '/recommendations/new', class: 'nav-link' %>
-        </li>
-
-        <li class="nav-item">
-          <%= link_to "Log Out", "/sessions/#{current_user.id}", class: 'nav-link', method: :delete %>
-        </li>
-      </ul>
-    <% end %>
- </div>
+<nav class='top-nav'>
+  <%= link_to "Turnip the Beet", "/", id: 'site-title' %>
+<div class="log-out-section">
+  <% if current_user %>
+    <%= link_to "Log Out", "/sessions/#{current_user.id}", id: 'log-out', class: 'nav-link', method: :delete %>
+  <% end %>
+  </div>
 </nav>
