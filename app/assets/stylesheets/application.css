@@ -28,6 +28,11 @@ img {
   animation-fill-mode: forwards;
 }
 
+.loader.hide {
+  animation: fadeOut 10s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes fadeOut {
   100% {
       opacity: 0;
