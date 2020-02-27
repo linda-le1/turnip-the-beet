@@ -51,12 +51,14 @@
 <% @cuisine_ids = recommendations.cuisine_ids %>
 <% @mood_ids = recommendations.mood_ids %>
 <% @combo_ids = recommendations.combo_ids %>
+<% @token = current_user.token %>
 
 <script>
 // PLAYLIST ID ARRAYS
   let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
   let moodIds = <%= @mood_ids.inspect.html_safe %>;
   let comboIds = <%= @combo_ids.inspect.html_safe %>;
+  let token = <%= @token.inspect.html_safe %>;
 
 // CUISINE PLAYLIST BUTTONS
   const cuisinePrevious = document.getElementById('cuisine-previous');
@@ -70,6 +72,23 @@
   const cuisineFollowButton =  document.getElementById('cuisine-follow');
   cuisineFollowButton.addEventListener('click', function() {
         let playlistId = document.getElementById('iframe-cuisine').src.split('/')[5]
+
+        fetch(`https://api.spotify.com/v1/playlists/${playlistId}/followers`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.status === 200) {
+            alert('You are now following this playlist :)');
+          }
+          else {
+            alert('Something went wrong! You didnt follow it');
+          }
+        })
+        .catch(error => alert('Something went wrong! You didnt follow it'));
   })
 
 
@@ -93,6 +112,23 @@
   const moodFollowButton =  document.getElementById('mood-follow');
   moodFollowButton.addEventListener('click', function() {
         let playlistId = document.getElementById('iframe-mood').src.split('/')[5]
+
+        fetch(`https://api.spotify.com/v1/playlists/${playlistId}/followers`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.status === 200) {
+            alert('You are now following this playlist :)');
+          }
+          else {
+            alert('Something went wrong! You didnt follow it');
+          }
+        })
+        .catch(error => alert('Something went wrong! You didnt follow it'));
   })
 
   const moodNext = document.getElementById('mood-next');
@@ -115,6 +151,23 @@
   const comboFollowButton =  document.getElementById('combo-follow');
   comboFollowButton.addEventListener('click', function() {
         let playlistId = document.getElementById('iframe-combo').src.split('/')[5]
+
+        fetch(`https://api.spotify.com/v1/playlists/${playlistId}/followers`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.status === 200) {
+            alert('You are now following this playlist :)');
+          }
+          else {
+            alert('Something went wrong! You didnt follow it');
+          }
+        })
+        .catch(error => alert('Something went wrong! You didnt follow it'));
   })
 
   const comboNext = document.getElementById('combo-next');
