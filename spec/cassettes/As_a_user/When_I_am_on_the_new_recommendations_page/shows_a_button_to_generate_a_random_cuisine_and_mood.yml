@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=mexican&mood=frisky&token=<LINDA_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 27 Feb 2020 21:47:54 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '1049'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6IkZyaXNreSIsInBsYXlsaXN0cyI6W3siaWQiOiIzN2k5ZFFaRjFEWDFCR2pGNU41TzdGIiwibmFtZSI6IlNleHkgYXMgRm9sayJ9LHsiaWQiOiIzN2k5ZFFaRjFEV1lmUTB1eEJZTTkwIiwibmFtZSI6Ilp1csO8Y2sgaW4gZGllIDYwZXIifSx7ImlkIjoiMzdpOWRRWkYxRFdXV3ZXSk5QZXlKRSIsIm5hbWUiOiJTZXh5IFImQiJ9LHsiaWQiOiIzN2k5ZFFaRjFEWjA2ZXZPMkxNblhHIiwibmFtZSI6IlRoaXMgSXMgNkxBQ0sifSx7ImlkIjoiMzdpOWRRWkYxRFg4bUJSWWV3RTZvciIsIm5hbWUiOiJTZXh0YSJ9XX0sImN1aXNpbmUiOnsidHlwZSI6Ik1leGljYW4iLCJwbGF5bGlzdHMiOlt7ImlkIjoiMzdpOWRRWkYxRFg1M3dxMFdZdGc1TCIsIm5hbWUiOiLCoVZpdmEgTcOpeGljbyEifSx7ImlkIjoiMzdpOWRRWkYxRFdTZnY0OTNhUGhvbCIsIm5hbWUiOiJUb3AgR2FtaW5nIE3DqXhpY28ifSx7ImlkIjoiMzdpOWRRWkYxRFgzeExHcXBtVTFVdiIsIm5hbWUiOiJMb3MgNjAgTcOpeGljbyJ9LHsiaWQiOiIzN2k5ZFFaRjFEV1VvV0xzUk5hYzYxIiwibmFtZSI6IkFydGlzdGFzIFBvcHVsYXJlcyBNw6l4aWNvIn0seyJpZCI6IjM3aTlkUVpGMURXWU1IQjU1ZmdaclkiLCJuYW1lIjoiSWNvbm9zIGRlbCBSb2NrIE1leGljYW5vIn1dfSwiY29tYm9zIjp7InR5cGUiOiJGcmlza3kgTWV4aWNhbiIsInBsYXlsaXN0cyI6W3siaWQiOiI2R1Z4M2ljTVVRMUt1VXc1RlZraEVIIiwibmFtZSI6IjYwcyBNZXhpY2FuIFJvY2sgJ24nIFJvbGwifSx7ImlkIjoiMDVXcTdPNHpQTHMwdEFjdmtxeVJBVSIsIm5hbWUiOiJTRVhZIE1FWElDQU4gTVVTSUMifSx7ImlkIjoiNWg5aXBnT21CNFRGVHFwNUFjMUJHbCIsIm5hbWUiOiIyMDE5IOKZoVJvbWFudGljYXPimaEg4piGUmVnaW9uYWwgTWV4aWNhbm/imIYifSx7ImlkIjoiMHF2cWpiZG5xRmtDZVIzRjM2MXBwQiIsIm5hbWUiOiJUaGUgU291bmQgb2YgUm9jayBVcmJhbm8gTWV4aWNhbm8ifSx7ImlkIjoiMXp4U3BCR3JvUkdBbGR4S2p0UmdGeSIsIm5hbWUiOiJDQjYifV19fX0=
+    http_version: null
+  recorded_at: Thu, 27 Feb 2020 21:47:55 GMT
+recorded_with: VCR 5.1.0
