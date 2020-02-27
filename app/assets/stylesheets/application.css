@@ -1,6 +1,6 @@
 
 #home-title {
-  font-size: 10em;
+  font-size: 11rem;
   font-family: 'Baloo Bhai';
   color: #ff4d2e;
   text-align: center;
@@ -9,7 +9,7 @@
 }
 
 #home-text {
-  font-size: 3em;
+  font-size: 4rem;
   color: black;
   text-align: center;
   font-weight: bold;
@@ -20,7 +20,7 @@
 }
 
 #lettuce-begin  {
-  font-size: 7em;
+  font-size: 8rem;
   font-family: 'Baloo Bhai';
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ h3.body-container {
 }
 
 #body-container {
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 #home-button  {
@@ -76,11 +76,11 @@ h3.body-container {
   white-space: nowrap;
   vertical-align: middle;
   border-radius: 0.25rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  font-size: 1.65rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  font-size: 2rem;
   background-color: #28a745;
   border-color: #28a745;
   color: white;
