@@ -1,9 +1,6 @@
 <body class='recommendations-new'>
 
-<% if !current_user %>
-  <%= render partial: '/partials/nav' %>
-  <h1 id='sad-path'>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%=link_to 'here', '/auth/spotify', id: 'sad-link' %> &#x1F966</h1>
-<% elsif current_user && current_user.expired_token? %>
+<% if !current_user || current_user.expired_token? %>
   <%= render partial: '/partials/nav' %>
   <h1 id='sad-path'>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%=link_to 'here', '/auth/spotify', id: 'sad-link' %> &#x1F966</h1>
 <% else %>
@@ -11,27 +8,21 @@
 
   <div class="input-container">
     <%= bootstrap_form_tag url: '/recommendations', method: :get do |f| %>
-    <div class="form">
-
-    <h1 class='questions' id='question-1'>What's on the menu?</h1>
-
-      <%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
-      { label: "hi", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
-
-    <h1 class='questions' id='question-2'>How you feelin'?</h1>
-
-    <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunny", "sunny"], ["Frisky", "frisky"] ],
-    { label: " ", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %><br><br>
-
-    <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge-light' %>
+      <div class="form">
+        <h1 class='questions' id='question-1'>What's on the menu?</h1>
+          <%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
+          { label: "hi", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+        <h1 class='questions' id='question-2'>How you feelin'?</h1>
+          <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunny", "sunny"], ["Frisky", "frisky"] ],
+          { label: " ", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %><br><br>
+        <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge-light' %>
+      </div>
     <% end %>
-  </div>
 
     <section id='feeling-wild'>
       <p>Not sure what to cook? Click this button and we will return some playlists for a random vibe and cuisine!</p>
       <%= button_to 'Guac my world', '/recommendations/random', class: 'btn btn-secondary btn-success btn-sm', method: :get %>
     </section>
-
   </div>
 <% end %>
 

@@ -1,11 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe 'as a visitor' do
-  describe 'when I visit the recommendations page' do
-    it 'I see a message telling me I cant access the page' do
+  describe 'when I visit the new recommendations page' do
+    it 'I see a message telling me to sign back in with spotify' do
       visit "/recommendations/new"
 
-      expect(page.status_code).to eq 404
+      expect(page).to have_content "Rotten tomatoes!"
+      expect(page).to have_link "here"
     end
   end
 end
