@@ -41,7 +41,7 @@ img {
 }
 
 .top-nav {
-  background-color: #28a745;
+  background-color: #7B1D2F;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,6 +54,14 @@ img {
   font-family: 'Baloo Bhai';
   color: white;
   font-size: 2rem;
+  padding-left: 1%;
+}
+
+#log-out {
+  font-family: 'Baloo Bhai';
+  color: white;
+  font-size: 1.5rem;
+  justify-content: flex-end;
 }
 
 nav a:hover {
@@ -66,6 +74,21 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.recommendations-new {
+  background-color: #F5D775;
+  background: rgba(244, 216, 117, 0.2)
+}
+
+.recommendations-index {
+  background-color: #F5D775;
+  background: rgba(244, 216, 117, 0.2)
+}
+
+.home {
+  background-color: #F5D775;
+  background: rgba(244, 216, 117, 0.2)
 }
 
 .form {
@@ -97,7 +120,7 @@ nav a:hover {
 #kale-title {
   font-family: 'Baloo Bhai';
   font-size: 6rem;
-  color: #ff4d2e;
+  color: #AA60AE;
   justify-content: center;
   align-items: flex-start;
 }
@@ -106,6 +129,7 @@ nav a:hover {
   font-size: 2.5rem;
   color: #343a40;
   justify-content: center;
+  font-weight: bold;
 }
 
 .cuisine-playlists {
@@ -155,26 +179,35 @@ iframe {
 .playlist-title {
   font-family: 'Baloo Bhai';
   font-size: 3rem;
-  color: #ff4d2e;
+  color: #AA60AE;
 }
 
-#questions  {
+.questions  {
   display: flex;
   font-family: 'Baloo Bhai';
   font-size: 6rem;
-  color: #ff4d2e;
+  color: #AA60AE;
   justify-content: center;
 }
 
-label {
-  color: white;
+/* #question-1 {
+  display: flex;
+  font-family: 'Baloo Bhai';
+  font-size: 6rem;
+  color: #7B1D2F;
+  justify-content: center;
 }
 
-#log-out {
+#question-2 {
+  display: flex;
   font-family: 'Baloo Bhai';
-  color: white;
-  font-size: 1.5rem;
-  justify-content: flex-end;
+  font-size: 6rem;
+  color: #AA60AE;
+  justify-content: center;
+} */
+
+label {
+  color: #FAF7E4;
 }
 
 #sad-path {
@@ -189,16 +222,14 @@ label {
 }
 
 #home-title {
-  font-size: 11rem;
+  font-size: 9rem;
   font-family: 'Baloo Bhai';
-  color: #ff4d2e;
+  color: #7B1D2F;
   text-align: center;
-  text-shadow: 3px 2px 2px white;
-  align-items: flex-start;
 }
 
 #home-text {
-  font-size: 4rem;
+  font-size: 2rem;
   color: black;
   text-align: center;
   font-weight: bold;
@@ -209,12 +240,10 @@ label {
 }
 
 #lettuce-begin  {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: 'Baloo Bhai';
-  display: flex;
   justify-content: center;
-  align-items: center;
-  color: #ff4d2e;
+  color: #AA60AE;
 }
 
 .home-container  {
@@ -234,10 +263,6 @@ h3.body-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#body-container {
-  padding-top: 50px;
 }
 
 #home-button  {
@@ -285,7 +310,7 @@ h3.body-container {
   border-color: #1e7e34;
 }
 
-.btn-less-huge {
+.btn-less-huge-light {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -297,8 +322,8 @@ h3.body-container {
   padding-right: 3rem;
   padding-left: 3rem;
   font-size: 1.5rem;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #B2CD75;
+  border-color: #B2CD75;
   color: white;
   transition-property: color;
   transition-timing-function: ease-in-out;
@@ -306,10 +331,37 @@ h3.body-container {
   transition-duration: .15s;
 }
 
-.btn-less-huge:hover {
+.btn-less-huge-light:hover {
   color: #fff;
   background-color: #218838;
-  border-color: #1e7e34;
+  border-color: #218838;
+}
+
+.btn-less-huge-dark {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  background-color: #218838;
+  border-color: #218838;
+  color: white;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-duration: .15s;
+}
+
+.btn-less-huge-dark:hover {
+  color: #fff;
+  background-color: #B2CD75;
+  border-color: #B2CD75;
 }
 
 .unrounded-btn-left {
@@ -347,8 +399,8 @@ h3.body-container {
 .unrounded-btn-block {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-color: #28a745;
-  background-color: #28a745;
+  border-color: #218838;
+  background-color: #218838;
   color: white;
   line-height: 1.5;
   display: block;
@@ -357,6 +409,6 @@ h3.body-container {
 
 .unrounded-btn-block:hover {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  background-color: #B2CD75;
+  border-color: #B2CD75;
 }
