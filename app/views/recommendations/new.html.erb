@@ -1,14 +1,29 @@
 <% if !current_user %>
   <%= render partial: '/partials/nav' %>
-  <h1>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%= link_to 'here', '/' %>.</h1>
+  <h1 id='sad-path'>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%=link_to 'here', '/', id: 'sad-link' %> &#x1F966</h1>
 <% elsif current_user && current_user.expired_token? %>
   <%= render partial: '/partials/nav' %>
-  <h1>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <% link_to 'here', '/' %>.</h1>
+  <h1 id='sad-path'>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%=link_to 'here', '/', id: 'sad-link' %> &#x1F966</h1>
 <% else %>
+  <%= render partial: '/partials/nav' %>
+
+  <div class="input-container">
     <%= bootstrap_form_tag url: '/recommendations', method: :get do |f| %>
+    <div class="form">
+
+    <h1 id='questions'>What's on the menu?</h1>
+
       <%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
-      { label: "Cuisine:", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
-      <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunshiny", "sunshiny"] ], { label: "Mood:", wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
-      <%= f.submit "Harvest Your Beets!" %>
+      { label: "Cuisine:", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %>
+
+    <h1 id='questions'>How you feelin'?</h1>
+
+    <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunshiny", "sunshiny"] ],
+    { label: "Mood:", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker" } %><br><br>
+
+    <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge' %>
     <% end %>
+    </div>
 <% end %>
+
+  </div>
