@@ -455,7 +455,9 @@ h3.body-container {
 #combo-iframe,
 #mood-iframe {
   height: 400px;
-  background-color: #000;
+  /* background-color: #000; */
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 #iframe-mood,
@@ -463,6 +465,5 @@ h3.body-container {
 #iframe-cuisine {
   /* background-color: #000; */
   /* height: 400px; */
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+
 }
