@@ -150,7 +150,7 @@ iframe {
 #cuisine,
 #mood,
 #combo {
-  margin: 2%;
+  margin: 0 2%;
 }
 
 .row-of-iframes {
@@ -448,4 +448,8 @@ h3.body-container {
   color: #fff;
   background-color: #218838;
   border-color: #218838;
+}
+#iframe-combo {
+  height: 400px;
+  width: 420px; 
 }
