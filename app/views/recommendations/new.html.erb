@@ -5,7 +5,9 @@
   <h1 id='sad-path'> &#x1F33D Shucks! &#x1F33D Log in again <%=link_to 'here', '/auth/spotify', id: 'sad-link' %> &#x1F966</h1>
 <% else %>
 
+<div class="nav-partial">
   <%= render partial: '/partials/nav' %>
+</div>
 
   <div class="input-container">
 
@@ -13,17 +15,17 @@
       <div class="form">
         <h1 class='questions' id='question-1'>What's on the menu?</h1>
           <%= f.select :cuisine, [["Italian", "italian"], ["Mexican", "mexican"], ["Indian", "indian"], ["American", "american"], ["Thai", "thai"], ["Greek", "greek"], ["Chinese", "chinese"], ["Japanese", "japanese"], ["Latin", "latin"], ["Vietnamese", "vietnamese"], ["BBQ", "bbq"], ["Korean", "korean"], ["French", "french"]],
-          { label: "hi", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker form-control form-control-lg" } %>
+          { label: " ", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker form-control form-control-lg" } %>
         <h1 class='questions' id='question-2'>How you feelin'?</h1>
           <%= f.select :mood, [["Party", "party"], ["Chill", "chill"], ["Happy", "happy"], ["Jazzy", "jazzy"], ["Glum", "glum"], ["Classy", "classy"], ["Romantic", "romantic"], ["Folksy", "folksy"], ["Sunny", "sunny"], ["Frisky", "frisky"] ],
           { label: " ", id: 'label', wrapper: { class: 'has-warning', data: { foo: 'bar' } } }, { class: "selectpicker form-control form-control-lg" } %><br>
-        <%= f.submit "Harvest Your Beets!", class: 'btn-less-huge-light' %>
+        <%= f.submit "Harvest Your Beats!", class: 'btn-less-huge-light' %>
       </div>
     <% end %>
     <div id='feeling-wild'>
       <h1 style="font-size:60px">&#x1F336👩‍🌾</h1>
       <h3 id='wild-text'>Feeling wild? Let us mix you up something special!</h3><br>
-      <%= button_to 'Guac My World', '/recommendations/random', class: 'btn-guac', method: :get %>
+      <div class="guac-button"><%= button_to 'Guac My World', '/recommendations/random', class: 'btn-guac', method: :get %></div>
     </div>
 
   </div>

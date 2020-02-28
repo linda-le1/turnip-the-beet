@@ -23,7 +23,7 @@
 }
 
 .loader.hide {
-  animation: fadeOut 7s;
+  animation: fadeOut 5s;
   animation-fill-mode: forwards;
 }
 
@@ -67,7 +67,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .recommendations-new {
@@ -92,29 +92,25 @@ nav a:hover {
   align-items: center;
 }
 
-/* .form-control {
-  font-size: 2rem;
-} */
-
-/* #mood {
-  font-size: 5rem;
-} */
-
-/* #cuisine */
-
 .index-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .button-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 1.5%;
   padding-bottom: 2.5%;
+}
+
+.nav-partial {
+  align-items: flex-start;
+  margin-bottom: 1%;
 }
 
 #kale-title {
@@ -122,7 +118,7 @@ nav a:hover {
   font-size: 6rem;
   color: #AA60AE;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #kale-subtitle {
@@ -146,15 +142,15 @@ nav a:hover {
   width: 100%;
 }
 
-iframe {
+/* iframe {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-}
+} */
 
 #cuisine,
 #mood,
 #combo {
-  margin: 2%;
+  margin: 0 2%;
 }
 
 .row-of-iframes {
@@ -223,6 +219,7 @@ iframe {
 
 #guac-button {
   justify-content: center;
+  margin-bottom: 1em;
 }
 
 .turnip-image {
@@ -446,9 +443,27 @@ h3.body-container {
   border-color: #B2CD75;
   color: white;
   padding: 0.5rem 0.75rem;
+  margin-bottom: 1.5em;
 }
 .btn-guac:hover {
   color: #fff;
   background-color: #218838;
   border-color: #218838;
+}
+
+#cuisine-iframe,
+#combo-iframe,
+#mood-iframe {
+  height: 400px;
+  /* background-color: #000; */
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+#iframe-mood,
+#iframe-combo,
+#iframe-cuisine {
+  /* background-color: #000; */
+  /* height: 400px; */
+
 }

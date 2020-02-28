@@ -9,7 +9,9 @@
   <% @combo_ids = recommendations.combo_ids %>
   <% @token = current_user.token %>
 
-  <%= render partial: '/partials/nav' %>
+  <div class="nav-partial">
+    <%= render partial: '/partials/nav' %>
+  </div>
 
   <div class="index-container">
 
@@ -21,7 +23,7 @@
 
       <div class="cuisine-playlists" id='cuisine'>
         <h3 class ='playlist-title'><%= recommendations.cuisine %> Playlists </h3>
-        <section id ='cuisine-iframe'></section>
+        <div id ='cuisine-iframe'></div>
         <div class="button-row">
         <button id='cuisine-previous' class='unrounded-btn-left'>Previous</button>
         <button id='cuisine-follow', class='unrounded-btn-block'>Follow on Spotify</button>
@@ -31,7 +33,7 @@
 
       <div class="combo-playlists" id='combo'>
         <h3 class ='playlist-title'>Mixed Beats</h3>
-        <section id ='combo-iframe'></section>
+        <div id ='combo-iframe'></div>
         <div class="button-row">
         <button id='combo-previous' class='unrounded-btn-left'>Previous</button>
         <button id='combo-follow', class='unrounded-btn-block'>Follow on Spotify</button>
@@ -40,8 +42,8 @@
       </div>
 
       <div class="mood-playlists" id='mood''>
-        <h3 class ='playlist-title'>Mixed Beats</h3>
-        <section id ='mood-iframe'></section>
+        <h3 class ='playlist-title'><%= recommendations.mood %> Playlists</h3>
+        <div id ='mood-iframe'></div>
         <div class="button-row">
         <button id='mood-previous' class='unrounded-btn-left'>Previous</button>
         <button id='mood-follow', class='unrounded-btn-block'>Follow on Spotify</button>
@@ -74,6 +76,7 @@ window.addEventListener("load", function () {
     cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[0]}`);
     cuisinePlayer.style.height = 400 + "px";
     cuisinePlayer.style.width = 420 + "px";
+    cuisinePlayer.style.border = 0;
     cuisinePlayer.id='iframe-cuisine';
     document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
 
@@ -81,6 +84,7 @@ window.addEventListener("load", function () {
     moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[0]}`);
     moodPlayer.style.height = 400 + "px";
     moodPlayer.style.width = 420 + "px";
+    moodPlayer.style.border = 0;
     moodPlayer.id='iframe-mood';
     document.getElementById("mood-iframe").appendChild(moodPlayer);
 
@@ -88,6 +92,7 @@ window.addEventListener("load", function () {
     comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[0]}`);
     comboPlayer.style.height = 400 + "px";
     comboPlayer.style.width = 420 + "px";
+    comboPlayer.style.border = 0;
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });
