@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beet-farmer.herokuapp.com/api/v1/recommend?cuisine=italian&mood=party&token=<LINDA_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 27 Feb 2020 23:18:19 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '1078'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7Im1vb2QiOnsidHlwZSI6IlBhcnR5IiwicGxheWxpc3RzIjpbeyJpZCI6IjM3aTlkUVpGMURXVHVqaUM3d2ZvZloiLCJuYW1lIjoiSW5kaWUgUGFydHkifSx7ImlkIjoiMzdpOWRRWkYxRFg1em1qYWVkNjlaVyIsIm5hbWUiOiJTb3VsIFBhcnR5In0seyJpZCI6IjM3aTlkUVpGMURYNFk0UmhyWnFIaHIiLCJuYW1lIjoiQmVhY2ggUGFydHkifSx7ImlkIjoiMzdpOWRRWkYxRFdaejBkbXRjbmRGUiIsIm5hbWUiOiJQYXJ0eSBVcCEifSx7ImlkIjoiMzdpOWRRWkYxRFhhWEI4ZlFnN3hpZiIsIm5hbWUiOiJEYW5jZSBQYXJ0eSJ9XX0sImN1aXNpbmUiOnsidHlwZSI6Ikl0YWxpYW4iLCJwbGF5bGlzdHMiOlt7ImlkIjoiMzdpOWRRWkYxRFg2d2ZRdXRpdllZciIsIm5hbWUiOiJIb3QgSGl0cyBJdGFsaWEifSx7ImlkIjoiMzdpOWRRWkYxRFgxNEVXZUgyUHdmMyIsIm5hbWUiOiJSYXAgSXRhbGlhOiBCYXR0bGUgUm95YWxlIn0seyJpZCI6IjM3aTlkUVpGMURYZEc0aFdsUlFVc0oiLCJuYW1lIjoiNzBzIEl0YWxpYSJ9LHsiaWQiOiIzN2k5ZFFaRjFEV1hVMm5hRlVuMzd4IiwibmFtZSI6IlpvbmEgVHJhcCJ9LHsiaWQiOiIzN2k5ZFFaRjFEWDJ0T1RRRmFrbG9QIiwibmFtZSI6IkJlc3Qgb2YgUmFwIEl0YWxpYSAyMDE5In1dfSwiY29tYm9zIjp7InR5cGUiOiJQYXJ0eSBJdGFsaWFuIiwicGxheWxpc3RzIjpbeyJpZCI6IjcybkhPWDNHQWtjQXhRajlMVE1JZDEiLCJuYW1lIjoiTWlnbGlvcmkgY2Fuem9uaSBpdGFsaWFuZSBlbnRybyBpbCAyMDE4IC0gSXRhbGlhbiBTb25ncywgSXRhbGlhbiBQYXJ0eSwgTm90dGUgSXRhbGlhLCBJdGFsaWFuIE5pZ2h0In0seyJpZCI6IjNMTlhsa2pqcXBGamF0cE5ZR2hVTnAiLCJuYW1lIjoiR3Jvd24gdXAgRGlubmVyIFBhcnR5IG11c2ljIn0seyJpZCI6IjcwcDJuMmFpUllyYmNTd3NYVVV3c1EiLCJuYW1lIjoiSXRhbGlhbiBQYXJ0eSJ9LHsiaWQiOiIyV0dqckFVTDluam42eEFKM3pZQk94IiwibmFtZSI6IlBhcnR5IEl0YWxpYW5vIPCfjIgifSx7ImlkIjoiNkEwYVJLbTFySW9kTjdIWUdKc0x3NiIsIm5hbWUiOiJUZWNobm8gUGFydHkg8J+YjiJ9XX19fQ==
+    http_version: null
+  recorded_at: Thu, 27 Feb 2020 23:18:19 GMT
+recorded_with: VCR 5.1.0

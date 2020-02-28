@@ -41,7 +41,7 @@ RSpec.describe 'As a user' do
       expect(current_path).to eq('/recommendations')
     end
 
-    it 'shows a button to generate a random cuisine and mood' do
+    xit 'shows a button to generate a random cuisine and mood' do
       user = create(:user, token: ENV['LINDA_TOKEN'], refresh_token: ENV['LINDA_REFRESH_TOKEN'])
 
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
