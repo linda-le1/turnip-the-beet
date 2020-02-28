@@ -30,7 +30,8 @@ https://turnip-the-beet.herokuapp.com/
 `rails db:migrate`
 
 ## Tech Stack
-- Ruby on Rails
+- Ruby (2.6.3)
+- Rails (6.0.2)
 - Sinatra
 - JavaScript
 - RSpec
@@ -44,3 +45,4 @@ https://turnip-the-beet.herokuapp.com/
 - Incorporation of a recipe API to generate reccommended recipes to go along with playlists.
 - Natural Language Processing to parse through a recipe and return playlists based on results.
 - Ability to share playlists and cuisines on social media; invite friends to use the app.
+- Redis to cache JSON responses on Beet Farmer
