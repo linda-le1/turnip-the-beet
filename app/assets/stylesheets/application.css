@@ -107,7 +107,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .button-section {
@@ -118,7 +118,6 @@ nav a:hover {
 }
 
 .nav-partial {
-  display: flex;
   align-items: flex-start;
 }
 
