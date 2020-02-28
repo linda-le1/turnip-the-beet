@@ -449,3 +449,8 @@ h3.body-container {
   background-color: #218838;
   border-color: #218838;
 }
+.mood-playlists,
+.combo-playlists,
+.cuisine-playlists {
+  background-color: #000;
+}

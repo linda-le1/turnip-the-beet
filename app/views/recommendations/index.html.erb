@@ -43,7 +43,7 @@
 
       <div class="mood-playlists" id='mood''>
         <h3 class ='playlist-title'><%= recommendations.mood %> Playlists</h3>
-        <div id ='mood-iframe'><iframe src="https://open.spotify.com/embed/playlist/4iGs7xOChcWrekmuZnv7w1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+        <div id ='mood-iframe'></div>
         <div class="button-row">
         <button id='mood-previous' class='unrounded-btn-left'>Previous</button>
         <button id='mood-follow', class='unrounded-btn-block'>Follow on Spotify</button>
@@ -79,18 +79,17 @@ window.addEventListener("load", function () {
     cuisinePlayer.id='iframe-cuisine';
     document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
 
-    // var moodPlayer = document.createElement("IFRAME");
-    // moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[0]}`);
-    // moodPlayer.style.height = 400 + "px";
-    // moodPlayer.style.width = 420 + "px";
-    // moodPlayer.id='iframe-mood';
-    // document.getElementById("mood-iframe").appendChild(moodPlayer);
+    var moodPlayer = document.createElement("IFRAME");
+    moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[0]}`);
+    moodPlayer.style.height = 400 + "px";
+    moodPlayer.style.width = 420 + "px";
+    moodPlayer.id='iframe-mood';
+    document.getElementById("mood-iframe").appendChild(moodPlayer);
 
     var comboPlayer = document.createElement("IFRAME");
     comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[0]}`);
     comboPlayer.style.height = 400 + "px";
     comboPlayer.style.width = 420 + "px";
-    comboPlayer.style.frameborder = 0
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });
