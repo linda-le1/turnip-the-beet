@@ -15,13 +15,13 @@ Turnip the Beet is a mod 3 group project that allows a user to input their cuisi
 https://turnip-the-beet.herokuapp.com/
 
 ## Instructions to Deploy
-First, clone the directory to a local repository:
+- First, clone the directory to a local repository:
 `git clone https://github.com/linda-le1/turnip-the-beet`
-Then, navigate into the project from your terminal:
+- Then, navigate into the project from your terminal:
 `cd turnip-the-beet`
-This project does make use of several gems (see details for more information below) that needs to be bundled:
+- This project does make use of several gems (see details for more information below) that needs to be bundled:
 `bundle install`
-Get your database and tables created:
+- Get your database and tables created:
 `rails db:create`
 `rails db:migrate`
 
