@@ -2,7 +2,7 @@
 
 <% if !current_user || current_user.expired_token? %>
   <%= render partial: '/partials/nav' %>
-  <h1 id='sad-path'>Rotten tomatoes! Your token has expired. Please re-authenticate with Spotify <%=link_to 'here', '/auth/spotify', id: 'sad-link' %> &#x1F966</h1>
+  <h1 id='sad-path'> &#x1F33D Shucks! &#x1F33D Log In again <%=link_to 'here', '/auth/spotify', id: 'sad-link' %> &#x1F966</h1>
 <% else %>
   <%= render partial: '/partials/nav' %>
 
