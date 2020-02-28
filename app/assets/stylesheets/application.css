@@ -29,7 +29,7 @@ img {
 }
 
 .loader.hide {
-  animation: fadeOut 10s;
+  animation: fadeOut 7s;
   animation-fill-mode: forwards;
 }
 
@@ -73,7 +73,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .recommendations-new {
@@ -205,6 +205,15 @@ iframe {
   color: #AA60AE;
   justify-content: center;
 } */
+
+#feeling-wild {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Baloo Bhai';
+  font-size: 1.5rem;
+  color: #AA60AE;
+  align-items: center;
+}
 
 label {
   color: #FAF7E4;
