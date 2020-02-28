@@ -450,11 +450,19 @@ h3.body-container {
   background-color: #218838;
   border-color: #218838;
 }
+
+#cuisine-iframe,
+#combo-iframe,
+#mood-iframe {
+  height: 400px;
+  background-color: #000;
+}
+
 #iframe-mood,
 #iframe-combo,
 #iframe-cuisine {
-  background-color: #000;
-  height: 400px;
+  /* background-color: #000; */
+  /* height: 400px; */
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
