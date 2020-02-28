@@ -36,7 +36,7 @@ RSpec.describe 'As a user' do
       select "Italian", from: :cuisine
       select "Party", from: :mood
 
-      click_button 'Harvest Your Beats!'
+      click_button 'Harvest Your Beets!'
 
       expect(current_path).to eq('/recommendations')
     end
