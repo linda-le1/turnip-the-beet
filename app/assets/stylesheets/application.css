@@ -92,16 +92,6 @@ nav a:hover {
   align-items: center;
 }
 
-/* .form-control {
-  font-size: 2rem;
-} */
-
-/* #mood {
-  font-size: 5rem;
-} */
-
-/* #cuisine */
-
 .index-container {
   display: flex;
   flex-direction: column;
@@ -120,7 +110,7 @@ nav a:hover {
 
 .nav-partial {
   align-items: flex-start;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 #kale-title {
@@ -157,11 +147,11 @@ iframe {
   border-top-right-radius: 0.25rem;
 }
 
-/* #cuisine,
+#cuisine,
 #mood,
 #combo {
   margin: 2%;
-} */
+}
 
 .row-of-iframes {
   display: flex;
@@ -229,6 +219,7 @@ iframe {
 
 #guac-button {
   justify-content: center;
+  margin-bottom: 2%;
 }
 
 .turnip-image {
