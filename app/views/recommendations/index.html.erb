@@ -9,9 +9,8 @@
   <% @combo_ids = recommendations.combo_ids %>
   <% @token = current_user.token %>
 
-  <%= render partial: '/partials/nav' %>
-
   <div class="index-container">
+    <div class="nav-partial"><%= render partial: '/partials/nav' %></div>
 
     <h1 id='kale-title'>&#x1f96c Kale Yeah! &#x1F346</h1>
     <h4 id='kale-subtitle'>&#x1F3B6 we have beats for you &#x1F3B6</h4>
@@ -40,7 +39,7 @@
       </div>
 
       <div class="mood-playlists" id='mood''>
-        <h3 class ='playlist-title'>Mixed Beats</h3>
+        <h3 class ='playlist-title'><%= recommendations.mood %> Beats</h3>
         <section id ='mood-iframe'></section>
         <div class="button-row">
         <button id='mood-previous' class='unrounded-btn-left'>Previous</button>

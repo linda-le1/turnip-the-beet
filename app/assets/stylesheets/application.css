@@ -117,12 +117,17 @@ nav a:hover {
   padding-bottom: 2.5%;
 }
 
+.nav-partial {
+  display: flex;
+  align-items: flex-start;
+}
+
 #kale-title {
   font-family: 'Baloo Bhai';
   font-size: 6rem;
   color: #AA60AE;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #kale-subtitle {
