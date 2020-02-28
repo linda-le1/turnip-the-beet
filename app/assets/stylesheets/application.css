@@ -454,4 +454,5 @@ h3.body-container {
 #iframe-combo,
 #iframe-cuisine {
   background-color: #000;
+  height: 400px;
 }
