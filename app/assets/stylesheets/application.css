@@ -104,13 +104,13 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 1.5%;
+  padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
 
 .nav-partial {
   align-items: flex-start;
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
 }
 
 #kale-title {
