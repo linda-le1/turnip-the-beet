@@ -443,14 +443,15 @@ h3.body-container {
   border-color: #B2CD75;
   color: white;
   padding: 0.5rem 0.75rem;
+  margin-bottom: 1.5em;
 }
 .btn-guac:hover {
   color: #fff;
   background-color: #218838;
   border-color: #218838;
 }
-.mood-playlists,
-.combo-playlists,
-.cuisine-playlists {
+#iframe-mood,
+#iframe-combo,
+#iframe-cuisine {
   background-color: #000;
 }

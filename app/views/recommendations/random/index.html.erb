@@ -76,6 +76,7 @@ window.addEventListener("load", function () {
     cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`);
     cuisinePlayer.style.height = 400 + "px";
     cuisinePlayer.style.width = 420 + "px";
+    cuisinePlayer.style.frameborder = 0;
     cuisinePlayer.id='iframe-cuisine';
     document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
 
@@ -83,6 +84,7 @@ window.addEventListener("load", function () {
     moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[1]}`);
     moodPlayer.style.height = 400 + "px";
     moodPlayer.style.width = 420 + "px";
+    moodPlayer.style.frameborder = 0;
     moodPlayer.id='iframe-mood';
     document.getElementById("mood-iframe").appendChild(moodPlayer);
 
@@ -90,6 +92,7 @@ window.addEventListener("load", function () {
     comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[1]}`);
     comboPlayer.style.height = 400 + "px";
     comboPlayer.style.width = 420 + "px";
+    comboPlayer.style.frameborder = 0;
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });
