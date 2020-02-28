@@ -5,9 +5,13 @@ Turnip the Beet is a mod 3 group project that allows a user to input their cuisi
 
 ## Group members
 [Jomah Fangonilo](https://github.com/jfangonilo)
+
 [Jordan Holtkamp](https://github.com/jordanholtkamp)
+
 [Linda Le](https://github.com/linda-le1/)
+
 [Melissa Robbins](https://github.com/mel-rob)
+
 
 <img width="1037" alt="Turnip the Beet Playlists" src="https://files.slack.com/files-pri/T029P2S9M-FUNC9TPTP/image.png">
 
