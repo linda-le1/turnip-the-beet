@@ -142,15 +142,17 @@ nav a:hover {
   width: 100%;
 }
 
-iframe {
+/* iframe {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-}
+} */
 
 #cuisine,
 #mood,
 #combo {
   margin: 0 2%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .row-of-iframes {
