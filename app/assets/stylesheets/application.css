@@ -219,7 +219,7 @@ iframe {
 
 #guac-button {
   justify-content: center;
-  margin-bottom: 2%;
+  padding-bottom: 2%;
 }
 
 .turnip-image {
