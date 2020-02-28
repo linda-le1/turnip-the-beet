@@ -151,8 +151,6 @@ nav a:hover {
 #mood,
 #combo {
   margin: 0 2%;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
 }
 
 .row-of-iframes {
@@ -457,4 +455,6 @@ h3.body-container {
 #iframe-cuisine {
   background-color: #000;
   height: 400px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
