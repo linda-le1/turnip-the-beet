@@ -1,4 +1,4 @@
-<img width="1037" alt="Turnip the Beet Home Page" src="https://files.slack.com/files-pri/T029P2S9M-FU9HWN4JE/image.png">
+![](app/assets/images/homepage.png)
 
 # Turnip the Beet
 Turnip the Beet is a mod 3 group project that allows a user to input their cuisine and mood for an event and returns a set of curated Spotify playlists. It uses the Spotify API/OAuth to authenticate users with a microservice built in Sinatra on the back end. Our unique mapping algorithms ensure the user is provided with the best playlists Spotify has to offer and guarantees a fun musical experience. It will guac your world!
@@ -9,7 +9,7 @@ Turnip the Beet is a mod 3 group project that allows a user to input their cuisi
 - Linda Le: https://github.com/linda-le1/
 - Melissa Robbins: https://github.com/mel-rob
 
-<img width="1037" alt="Turnip the Beet Playlists" src="https://files.slack.com/files-pri/T029P2S9M-FUNC9TPTP/image.png">
+![](app/assets/images/playlist.png)
 
 ## Production Link
 https://turnip-the-beet.herokuapp.com/
