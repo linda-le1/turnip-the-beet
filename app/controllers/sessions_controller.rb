@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
         token_expires:  Time.now + 3600
       )
     end
-    flash[:notice] = "Welcome, #{user.display_name}!"
     redirect_to '/recommendations/new'
     session[:user_id] = user.id
   end

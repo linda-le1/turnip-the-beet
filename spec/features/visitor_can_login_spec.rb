@@ -20,7 +20,6 @@ describe 'As a visitor' do
     user = User.last
 
     expect(current_path).to eq('/recommendations/new')
-    expect(page).to have_content("Welcome, #{user.display_name}!")
     expect(user.token).to eq('12345')
   end
 
