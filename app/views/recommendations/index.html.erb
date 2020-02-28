@@ -9,11 +9,13 @@
   <% @combo_ids = recommendations.combo_ids %>
   <% @token = current_user.token %>
 
+  <div class="nav-partial">
+    <%= render partial: '/partials/nav' %>
+  </div>
+
   <div class="index-container">
-    
-    <div class="nav-partial">
-      <%= render partial: '/partials/nav' %>
-    </div>
+
+
 
     <h1 id='kale-title'>&#x1f96c Kale Yeah! &#x1F346</h1>
     <h4 id='kale-subtitle'>&#x1F3B6 we have beats for you &#x1F3B6</h4>
