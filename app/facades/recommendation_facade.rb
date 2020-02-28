@@ -26,10 +26,6 @@ class RecommendationFacade
     service.recommendations[:mood][:type]
   end
 
-  # def cuisine
-  #   service.recommendations[:cuisine][:type]
-  # end
-
   def moods
     service.recommendations[:mood][:playlists].map do |playlist_hash|
       Playlist.new(playlist_hash)
