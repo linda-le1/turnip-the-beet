@@ -20,7 +20,7 @@ describe 'as a logged in user' do
       expect(page).to have_button "Harvest Your Beats!"
 
       user.update(token_expires: Time.now - 10)
-      click_button "Harvest Your Beets!"
+      click_button "Harvest Your Beats!"
 
       expect(page).to have_content "Shucks"
       expect(page).not_to have_button "Harvest Your Beats!"
