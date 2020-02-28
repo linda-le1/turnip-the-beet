@@ -88,8 +88,9 @@ window.addEventListener("load", function () {
 
     var comboPlayer = document.createElement("IFRAME");
     comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[0]}`);
-    // comboPlayer.style.height = 400 + "px";
-    // comboPlayer.style.width = 420 + "px";
+    comboPlayer.style.height = 400 + "px";
+    comboPlayer.style.width = 420 + "px";
+    comboPlayer.style.frameborder = 0
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });

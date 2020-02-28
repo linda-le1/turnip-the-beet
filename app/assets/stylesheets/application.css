@@ -219,7 +219,7 @@ iframe {
 
 #guac-button {
   justify-content: center;
-  padding-bottom: 2.5%;
+  margin-bottom: 1em;
 }
 
 .turnip-image {
@@ -448,8 +448,4 @@ h3.body-container {
   color: #fff;
   background-color: #218838;
   border-color: #218838;
-}
-#iframe-combo {
-  height: 400px;
-  width: 420px; 
 }
