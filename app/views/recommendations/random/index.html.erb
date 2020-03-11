@@ -72,6 +72,7 @@ window.addEventListener("load", function () {
     cuisinePlayer.style.height = 400 + "px";
     cuisinePlayer.style.width = 420 + "px";
     cuisinePlayer.style.border = 0;
+    cuisinePlayer.allow = 'encrypted-media';
     cuisinePlayer.id='iframe-cuisine';
     document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
 
@@ -80,6 +81,7 @@ window.addEventListener("load", function () {
     moodPlayer.style.height = 400 + "px";
     moodPlayer.style.width = 420 + "px";
     moodPlayer.style.border = 0;
+    moodPlayer.allow = 'encrypted-media';
     moodPlayer.id='iframe-mood';
     document.getElementById("mood-iframe").appendChild(moodPlayer);
 
@@ -88,6 +90,7 @@ window.addEventListener("load", function () {
     comboPlayer.style.height = 400 + "px";
     comboPlayer.style.width = 420 + "px";
     comboPlayer.style.border = 0;
+    comboPlayer.allow = 'encrypted-media';
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });
