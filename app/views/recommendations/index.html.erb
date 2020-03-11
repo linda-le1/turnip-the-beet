@@ -4,11 +4,6 @@
       <img src="https://media.giphy.com/media/pOJSTsYw7fVVyPvThs/giphy.gif" alt="Loading..." />
   </div>
 
-  <% @cuisine_ids = recommendations.cuisine_ids %>
-  <% @mood_ids = recommendations.mood_ids %>
-  <% @combo_ids = recommendations.combo_ids %>
-  <% @token = current_user.token %>
-
   <div class="nav-partial">
     <%= render partial: '/partials/nav' %>
   </div>
@@ -65,10 +60,10 @@
     loader.className += " hidden";
 });
 
-let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
-let moodIds = <%= @mood_ids.inspect.html_safe %>;
-let comboIds = <%= @combo_ids.inspect.html_safe %>;
-let token = <%= @token.inspect.html_safe %>;
+let cuisineIds = <%= recommendations.cuisine_ids.inspect.html_safe %>;
+let moodIds = <%= recommendations.mood_ids.inspect.html_safe %>;
+let comboIds = <%= recommendations.combo_ids.inspect.html_safe %>;
+let token = <%= current_user.token.inspect.html_safe %>;
 
 window.addEventListener("load", function () {
 
@@ -77,6 +72,7 @@ window.addEventListener("load", function () {
     cuisinePlayer.style.height = 400 + "px";
     cuisinePlayer.style.width = 420 + "px";
     cuisinePlayer.style.border = 0;
+    cuisinePlayer.allow = 'encrypted-media';
     cuisinePlayer.id='iframe-cuisine';
     document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
 
@@ -85,6 +81,7 @@ window.addEventListener("load", function () {
     moodPlayer.style.height = 400 + "px";
     moodPlayer.style.width = 420 + "px";
     moodPlayer.style.border = 0;
+    moodPlayer.allow = 'encrypted-media';
     moodPlayer.id='iframe-mood';
     document.getElementById("mood-iframe").appendChild(moodPlayer);
 
@@ -93,6 +90,7 @@ window.addEventListener("load", function () {
     comboPlayer.style.height = 400 + "px";
     comboPlayer.style.width = 420 + "px";
     comboPlayer.style.border = 0;
+    comboPlayer.allow = 'encrypted-media';
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });

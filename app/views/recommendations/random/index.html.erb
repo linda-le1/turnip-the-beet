@@ -4,12 +4,9 @@
       <img src="https://media.giphy.com/media/9Vk8qP9EmWB8FePccb/giphy.gif" alt="Loading..." />
   </div>
 
-  <% @cuisine_ids = recommendations.cuisine_ids %>
-  <% @mood_ids = recommendations.mood_ids %>
-  <% @combo_ids = recommendations.combo_ids %>
-  <% @token = current_user.token %>
-
-  <%= render partial: '/partials/nav' %>
+  <div class="nav-partial">
+    <%= render partial: '/partials/nav' %>
+  </div>
 
   <div class="index-container">
 
@@ -20,37 +17,34 @@
     <div class="row-of-iframes">
 
       <div class="cuisine-playlists" id='cuisine'>
-        <h3 class='playlist-title'><%= recommendations.cuisine %> Playlists</h3>
-        <iframe id='iframe-cuisine' src="https://open.spotify.com/embed/playlist/<%= recommendations.cuisine_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <h3 class ='playlist-title'><%= recommendations.cuisine %> Playlists </h3>
+        <div id ='cuisine-iframe'></div>
         <div class="button-row">
-          <button id='cuisine-previous' class='unrounded-btn-left'>Previous</button>
-          <button id='cuisine-follow' class='unrounded-btn-block'>Follow on Spotify</button>
-          <button id='cuisine-next' class='unrounded-btn-right'>Next</button>
+        <button id='cuisine-previous' class='unrounded-btn-left'>Previous</button>
+        <button id='cuisine-follow', class='unrounded-btn-block'>Follow on Spotify</button>
+        <button id='cuisine-next' class='unrounded-btn-right'>Next</button>
         </div>
       </div>
 
       <div class="combo-playlists" id='combo'>
-        <h3 class='playlist-title'>Mixed Beats</h3>
-        <iframe id='iframe-combo' src="https://open.spotify.com/embed/playlist/<%= recommendations.combo_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <h3 class ='playlist-title'>Mixed Beats</h3>
+        <div id ='combo-iframe'></div>
         <div class="button-row">
-
         <button id='combo-previous' class='unrounded-btn-left'>Previous</button>
         <button id='combo-follow', class='unrounded-btn-block'>Follow on Spotify</button>
         <button id='combo-next' class='unrounded-btn-right'>Next</button>
         </div>
       </div>
 
-      <div class="mood-playlists" id='mood'>
-        <h3 class='playlist-title'><%= recommendations.mood %> Playlists</h3>
-        <iframe id='iframe-mood' src="https://open.spotify.com/embed/playlist/<%= recommendations.mood_ids[0] %>" width="420" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <div class="mood-playlists" id='mood''>
+        <h3 class ='playlist-title'><%= recommendations.mood %> Playlists</h3>
+        <div id ='mood-iframe'></div>
         <div class="button-row">
-
         <button id='mood-previous' class='unrounded-btn-left'>Previous</button>
         <button id='mood-follow', class='unrounded-btn-block'>Follow on Spotify</button>
         <button id='mood-next' class='unrounded-btn-right'>Next</button>
         </div>
       </div>
-    </div>
 
   </div>
 
@@ -63,36 +57,40 @@
 <script>
   window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
-    loader.className += " hide";
+    loader.className += " hidden";
 });
 
-let cuisineIds = <%= @cuisine_ids.inspect.html_safe %>;
-let moodIds = <%= @mood_ids.inspect.html_safe %>;
-let comboIds = <%= @combo_ids.inspect.html_safe %>;
-let token = <%= @token.inspect.html_safe %>;
+let cuisineIds = <%= recommendations.cuisine_ids.inspect.html_safe %>;
+let moodIds = <%= recommendations.mood_ids.inspect.html_safe %>;
+let comboIds = <%= recommendations.combo_ids.inspect.html_safe %>;
+let token = <%= current_user.token.inspect.html_safe %>;
 
 window.addEventListener("load", function () {
+
     var cuisinePlayer = document.createElement("IFRAME");
-    cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[1]}`);
+    cuisinePlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${cuisineIds[0]}`);
     cuisinePlayer.style.height = 400 + "px";
     cuisinePlayer.style.width = 420 + "px";
     cuisinePlayer.style.border = 0;
+    cuisinePlayer.allow = 'encrypted-media';
     cuisinePlayer.id='iframe-cuisine';
     document.getElementById("cuisine-iframe").appendChild(cuisinePlayer);
 
     var moodPlayer = document.createElement("IFRAME");
-    moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[1]}`);
+    moodPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${moodIds[0]}`);
     moodPlayer.style.height = 400 + "px";
     moodPlayer.style.width = 420 + "px";
     moodPlayer.style.border = 0;
+    moodPlayer.allow = 'encrypted-media';
     moodPlayer.id='iframe-mood';
     document.getElementById("mood-iframe").appendChild(moodPlayer);
 
     var comboPlayer = document.createElement("IFRAME");
-    comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[1]}`);
+    comboPlayer.setAttribute("src", `https://open.spotify.com/embed/playlist/${comboIds[0]}`);
     comboPlayer.style.height = 400 + "px";
     comboPlayer.style.width = 420 + "px";
     comboPlayer.style.border = 0;
+    comboPlayer.allow = 'encrypted-media';
     comboPlayer.id='iframe-combo';
     document.getElementById("combo-iframe").appendChild(comboPlayer);
     });
@@ -100,7 +98,7 @@ window.addEventListener("load", function () {
   const cuisinePrevious = document.getElementById('cuisine-previous');
   cuisinePrevious.addEventListener('click', function() {
         cuisineIds.push(cuisineIds.shift())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[0]}`
         let iframeHTML = document.getElementById('iframe-cuisine');
         iframeHTML.src = playlistHTML;
   });
@@ -131,16 +129,15 @@ window.addEventListener("load", function () {
   const cuisineNext = document.getElementById('cuisine-next');
   cuisineNext.addEventListener('click', function() {
         cuisineIds.unshift(cuisineIds.pop())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${cuisineIds[0]}`
         let iframeHTML = document.getElementById('iframe-cuisine');
         iframeHTML.src = playlistHTML;
   });
 
-// MOOD PLAYLIST BUTTONS
   const moodPrevious = document.getElementById('mood-previous');
   moodPrevious.addEventListener('click', function() {
         moodIds.push(moodIds.shift())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds[0]}`
         let iframeHTML = document.getElementById('iframe-mood');
         iframeHTML.src = playlistHTML;
   });
@@ -170,7 +167,7 @@ window.addEventListener("load", function () {
   const moodNext = document.getElementById('mood-next');
   moodNext.addEventListener('click', function() {
         moodIds.unshift(moodIds.pop())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${moodIds[0]}`
         let iframeHTML = document.getElementById('iframe-mood');
         iframeHTML.src = playlistHTML;
   });
@@ -179,7 +176,7 @@ window.addEventListener("load", function () {
   const comboPrevious = document.getElementById('combo-previous');
   comboPrevious.addEventListener('click', function() {
         comboIds.push(comboIds.shift())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds[0]}`
         let iframeHTML = document.getElementById('iframe-combo');
         iframeHTML.src = playlistHTML;
   });
@@ -209,7 +206,7 @@ window.addEventListener("load", function () {
   const comboNext = document.getElementById('combo-next');
   comboNext.addEventListener('click', function() {
         comboIds.unshift(comboIds.pop())
-        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds}`
+        let playlistHTML = `https://open.spotify.com/embed/playlist/${comboIds[0]}`
         let iframeHTML = document.getElementById('iframe-combo');
         iframeHTML.src = playlistHTML;
   });
